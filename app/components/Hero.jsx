@@ -9,7 +9,7 @@ export default function Hero() {
       <section className={styles.heroSection}>
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-            <div className={styles.container + " lg:order-last"}>
+            <div className={`${styles.container} lg:order-last`}>
               <Image
                 src="/youtubeLogo.png"
                 alt="Hero"
@@ -28,16 +28,15 @@ export default function Hero() {
 
               <p className="mt-4 text-gray-600">
                 Download Thumbnails, Logos, Banners, Captions, and More in
-                Seconds. Whether you're a content creator, marketer, or
+                Seconds. Whether you&apos;re a content creator, marketer, or
                 researcher, access the assets you need with a single click.
                 Quick, easy, and reliable.
               </p>
 
-              <Link
-                href="thumbnail"
-                className="mt-8 inline-block rounded bg-red-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-red-400 focus:outline-none focus:ring focus:ring-yellow-400"
-              >
-                Get Started Today
+              <Link href="/thumbnail">
+                <a className="mt-8 inline-block rounded bg-red-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-red-400 focus:outline-none focus:ring focus:ring-yellow-400">
+                  Get Started Today
+                </a>
               </Link>
             </div>
           </div>

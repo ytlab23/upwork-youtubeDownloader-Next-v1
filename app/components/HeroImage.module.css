@@ -1,0 +1,29 @@
+.heroSection {
+  padding-bottom: 0; /* Remove bottom padding */
+  margin-bottom: 0; /* Remove bottom margin */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  max-height: 500px;
+  animation: moveUpDown 2s ease-in-out infinite;
+}
+
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}

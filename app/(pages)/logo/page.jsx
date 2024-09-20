@@ -11,7 +11,7 @@
 // //   const handleFetchAssets = async () => {
 // //     try {
 // //       const response = await axios.post(
-// //         "http://localhost:5000/api/get-assets",
+// //         "https://upwork-youtube-downloader-nodejs-v1.vercel.app/api/get-assets",
 // //         { url }
 // //       );
 // //       setAssets(response.data);
@@ -83,7 +83,7 @@
 //   const handleFetchAssets = async () => {
 //     try {
 //       const response = await axios.post(
-//         "http://localhost:5000/api/get-assets",
+//         "https://upwork-youtube-downloader-nodejs-v1.vercel.app/api/get-assets",
 //         { url }
 //       );
 //       setAssets(response.data);
@@ -96,7 +96,7 @@
 //   const handleDownload = (type) => {
 //     axios
 //       .post(
-//         "http://localhost:5000/api/download-assets",
+//         "https://upwork-youtube-downloader-nodejs-v1.vercel.app/download-assets",
 //         { url, type },
 //         { responseType: "blob" }
 //       )
@@ -185,7 +185,7 @@ export default function Page() {
   const handleFetchAssets = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/get-assets",
+        "https://upwork-youtube-downloader-nodejs-v1.vercel.app/api/get-assets",
         { url }
       );
       setAssets(response.data);
@@ -200,7 +200,7 @@ export default function Page() {
   const handleDownload = () => {
     axios
       .post(
-        "http://localhost:5000/api/download-assets",
+        "https://upwork-youtube-downloader-nodejs-v1.vercel.app/api/download-assets",
         { url, type: "logo", content: "logo" },
         { responseType: "blob" }
       )

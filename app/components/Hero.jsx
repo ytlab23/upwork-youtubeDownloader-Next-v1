@@ -34,9 +34,9 @@ export default function Hero() {
               </p>
 
               <Link href="/thumbnail">
-                <a className="mt-8 inline-block rounded bg-red-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-red-400 focus:outline-none focus:ring focus:ring-yellow-400">
+                <div className="mt-8 inline-block rounded bg-red-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-red-400 focus:outline-none focus:ring focus:ring-yellow-400">
                   Get Started Today
-                </a>
+                </div>
               </Link>
             </div>
           </div>

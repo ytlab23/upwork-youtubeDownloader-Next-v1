@@ -343,7 +343,7 @@ export default function Page() {
   const handleFetchAssets = async () => {
     try {
       const response = await axios.post(
-        "https://upwork-youtube-downloader-nodejs-v1.vercel.app/api/get-assets",
+        "https://upwork-yoububee-downolader-nodejs-v1.vercel.app/api/get-assets",
         { url }
       );
       setAssets(response.data);
@@ -357,10 +357,13 @@ export default function Page() {
 
   const handleTranslate = async () => {
     try {
-      const response = await axios.post("https://upwork-youtube-downloader-nodejs-v1.vercel.app/api/translate", {
-        transcript: assets.transcript,
-        language,
-      });
+      const response = await axios.post(
+        "https://upwork-youtube-downloader-nodejs-v1.vercel.app/api/translate",
+        {
+          transcript: assets.transcript,
+          language,
+        }
+      );
       setTranslatedTranscript(response.data.translatedText);
       setError("");
     } catch (err) {
@@ -372,11 +375,11 @@ export default function Page() {
   const handleDownloadPDF = async () => {
     try {
       const response = await axios.post(
-        "https://upwork-youtube-downloader-nodejs-v1.vercel.app/api/download-assets",
+        "https://upwork-yoububee-downolader-nodejs-v1.vercel.app/api/download-assets",
         {
           url,
           type: "pdf",
-          content: 'transcript' || assets.transcript,
+          content: "transcript" || assets.transcript,
         },
         { responseType: "blob" } // Important for downloading files
       );

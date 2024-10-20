@@ -41,14 +41,13 @@ const FAQ = () => {
         {/* Left side - Header and Support Info */}
         <div className="w-full md:w-1/2 md:pr-12 text-left mb-8 md:mb-0">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">
-            Frequently Asked Questions FAQs
+            Frequently Asked Questions <span className="text-red-600"> (FAQs)</span>
           </h2>
           <p className="mb-6 text-gray-600">
-            Can’t find the answer you’re looking for? Reach out to our{" "}
-            <a href="#" className="text-blue-600 font-medium">
-              customer support
-            </a>{" "}
-            team.
+            Curious about how we can enhance your YouTube experience? Explore
+            the most common questions from our community and discover the
+            answers that can unlock new possibilities for your content creation
+            journey!
           </p>
         </div>
 

@@ -89,7 +89,7 @@ export default function Services() {
                   <p className="text-gray-600">
                     Your logo is the face of the brand. So, creating it from
                     scratch is not advisable for beginners. With our logo
-                    downloader, you can easily save any YouTube channel's logo.
+                    downloader, you can easily save any YouTube channel&apos;s logo.
                     Edit it with a random tool to create your own logo.
                   </p>
                 </div>

@@ -1,10 +1,9 @@
 import React from "react";
-// lg:flex-row-reverse
 export default function Features() {
   const Featuress = [
     {
       header: "High-Quality",
-      text: "Quality matters a lot on YouTube. The algorithm usually does not promote low-resolution thumbnails or poorly formatted captions. That’s why we prioritize delivering high-quality outputs every time. Our system is designed to fetch you the highest resolution available.",
+      text: "Quality matters a lot on YouTube. The algorithm usually does not promote low-resolution thumbnails or poorly formatted captions. Thats why we prioritize delivering high-quality outputs every time. Our system is designed to fetch you the highest resolution available.",
     },
     {
       header: "User-Friendly Interface",
@@ -16,7 +15,7 @@ export default function Features() {
     },
     {
       header: "Fast Processing",
-      text: "As soon as you hit the ‘download’ button, we will fetch the details from the channel and display them in the best quality- all within seconds. Our lightning-fast automated system processes your order within seconds. There will not be any video ads that will affect your loading speed. Paste, download, done - it's that quick!",
+      text: "As soon as you hit the download button, we will fetch the details from the channel and display them in the best quality- all within seconds. Our lightning-fast automated system processes your order within seconds. There will not be any video ads that will affect your loading speed. Paste, download, done - it's that quick!",
     },
     {
       header: "Reliable Results",
@@ -40,7 +39,7 @@ export default function Features() {
               <p className="mt-4 text-gray-600">
                 Nowadays, a lot of platforms offer various types of
                 YouTube-related services. Yet, millions of users prefer us, and
-                that’s not just a coincidence. Check out how we stand out from
+                thats not just a coincidence. Check out how we stand out from
                 other platforms.
               </p>
             </div>

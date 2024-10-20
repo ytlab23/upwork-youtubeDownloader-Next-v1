@@ -22,20 +22,19 @@ export default function Hero() {
 
             <div className="lg:py-24">
               <h2 className="text-3xl font-bold sm:text-4xl">
-                Unlock <span style={{ color: "red" }}>You</span>Tube Content
-                Effortlessly
+                <span style={{ color: "red" }}>You</span>Tube Content Success
+                Made Easy
               </h2>
 
               <p className="mt-4 text-gray-600">
-                Download Thumbnails, Logos, Banners, Captions, and More in
-                Seconds. Whether you&apos;re a content creator, marketer, or
-                researcher, access the assets you need with a single click.
-                Quick, easy, and reliable.
+                Get quick and easy access to all important YouTube resources
+                like thumbnails, logos, banners, and captions. Download
+                everything you need in seconds!
               </p>
 
               <Link href="/thumbnail">
                 <div className="mt-8 inline-block rounded bg-red-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-red-400 focus:outline-none focus:ring focus:ring-yellow-400">
-                  Get Started Today
+                  TRY NOW!
                 </div>
               </Link>
             </div>

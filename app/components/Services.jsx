@@ -21,14 +21,12 @@ export default function Services() {
             </svg>
 
             <h2 className="my-8 text-2xl font-bold text-gray-700 md:text-4xl">
-              Comprehensive <span style={{ color: "red" }}>You</span>Tube
-              Content Extraction
+              All-in-One <span style={{ color: "red" }}>You</span>Tube Toolkit
             </h2>
             <p className="text-gray-600">
-              Easily download a variety of YouTube assets with our streamlined
-              service. From video thumbnails to channel banners, profile
-              pictures, and transcripts, get everything you need to enhance your
-              content creation.
+              Stop switching between the tabs of multiple websites. Download all
+              YouTube assets from a single, user-friendly platform. And that,
+              too, for free! Have a look at the five main tools in our platform.
             </p>
           </div>
           <div className="mt-16 grid divide-x divide-y divide-gray-100 overflow-hidden rounded-3xl border border-gray-100 text-gray-600 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4">
@@ -44,11 +42,14 @@ export default function Services() {
 
                 <div className="space-y-2">
                   <h5 className="text-xl font-semibold text-gray-700 transition group-hover:text-secondary">
-                    Thumbnail Downloads
+                    Thumbnail Downloader
                   </h5>
                   <p className="text-gray-600">
-                    Extract high-quality thumbnails from any YouTube video in
-                    seconds.
+                    First impressions matter! With our thumbnail download tool,
+                    you can instantly grab attention with the perfect visual for
+                    your video through a simple click. No more screenshot
+                    hassles or low-quality images. Get exactly what you need to
+                    showcase your content in the best light.
                   </p>
                 </div>
                 <Link
@@ -83,10 +84,13 @@ export default function Services() {
 
                 <div className="space-y-2">
                   <h5 className="text-xl font-semibold text-gray-700 transition group-hover:text-secondary">
-                    Logo/Profile Picture
+                    Logo Downloader
                   </h5>
                   <p className="text-gray-600">
-                    Get the official channel logo or profile picture instantly.
+                    Your logo is the face of the brand. So, creating it from
+                    scratch is not advisable for beginners. With our logo
+                    downloader, you can easily save any YouTube channel's logo.
+                    Edit it with a random tool to create your own logo.
                   </p>
                 </div>
                 <Link
@@ -121,11 +125,14 @@ export default function Services() {
 
                 <div className="space-y-2">
                   <h5 className="text-xl font-semibold text-gray-700 transition group-hover:text-secondary">
-                    Channel Art/Banner
+                    Banner Downloader
                   </h5>
                   <p className="text-gray-600">
-                    Download stunning channel art and banners in just a few
-                    seconds.
+                    Need a stunning banner to represent your YouTube channel?
+                    Simply paste the URL to your inspiring source channel. Our
+                    easy-to-use tool will fetch full-resolution banners
+                    instantly. Keep your website visitors hooked with
+                    eye-catching visuals!
                   </p>
                 </div>
                 <Link
@@ -160,11 +167,14 @@ export default function Services() {
 
                 <div className="space-y-2">
                   <h5 className="text-xl font-semibold text-gray-700 transition group-hover:text-secondary">
-                    Transcripts
+                    Captions Download
                   </h5>
                   <p className="text-gray-600">
-                    Access and download video transcripts, including
-                    translations, to enhance your research or content strategy.
+                    Feeling trapped within language barriers? Well, our platform
+                    lets you download subtitles of any video easily. You can
+                    paste them to a translator to view the content in your local
+                    language. Luckily, our tool supports multiple languages and
+                    formats.
                   </p>
                 </div>
                 <Link

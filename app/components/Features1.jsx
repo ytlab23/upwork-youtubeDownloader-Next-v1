@@ -6,7 +6,7 @@ export default function Features1({header,data}) {
         <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
           <div className="flex flex-col gap-y-8 lg:items-center lg:gap-x-16">
           {header.map((feature) => (
-            <div className="mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left">
+            <div className="mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left" key={feature.title}>
            {feature.title}
            {feature.desc}
             </div>))}

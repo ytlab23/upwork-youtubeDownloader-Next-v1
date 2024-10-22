@@ -28,7 +28,7 @@ export default function Services({ header, data }) {
           </div>
           <div className="mt-16 grid divide-x divide-y divide-gray-100 overflow-hidden rounded-3xl border border-gray-100 text-gray-600 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4">
             {data.map((item, index) => (
-              <div className="group relative bg-white transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+              <div className="group relative bg-white transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10" key={index}>
                 <div className="relative space-y-8 py-12 p-8">
                   <span className="inline-block rounded-lg bg-gray-50 p-3">
                     <img

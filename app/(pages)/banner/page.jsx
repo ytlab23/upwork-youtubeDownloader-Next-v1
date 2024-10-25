@@ -7,6 +7,7 @@ import FAQ1 from "@/app/components/FAQ1";
 import CTA from "@/app/components/CTA";
 import Services from "@/app/components/Services1";
 import Use from "@/app/components/Use";
+import TextinHero from "@/app/components/TextinHero";
 
 export default function Page() {
   const [url, setUrl] = useState("");
@@ -129,10 +130,33 @@ export default function Page() {
       ),
     },
   ];
+  const serviceHeader2 = [
+    {
+      title: (
+        <h2 className="text-3xl font-bold sm:text-4xl">
+          Why You Need a Good <span className="text-red-600">You</span>Tube
+          Banner Downloader?
+        </h2>
+      ),
+      desc: (
+        <p className="mt-4 text-gray-600">
+          Your YouTube banner is one of the first things people notice when they
+          visit your channel. It sets the tone for your content and gives
+          viewers an idea of what to expect. Heres why having a great banner is
+          key for growing your channel:
+        </p>
+      ),
+      imgLink: "./Thumbnail.png",
+    },
+  ];
   const serviceData = [
     {
       header: "Show Your Personality",
       desc: "Your banner is a chance to express who you are. You can use it to convey the mood of your YouTube channel like fun, informative, artistic, etc.",
+    },
+    {
+      header: "Sets Expectations",
+      desc: "Images like banners and logos tell visitors what your channel is about at a glance. As a result, they will get an idea of what to expect from your channel. This way, you can target and drive the right audience to your channel.",
     },
     {
       header: "Professional Look",
@@ -178,6 +202,20 @@ export default function Page() {
       data: "Soon, you will see a preview of the banner. If you are satisfied with the quality, you can go ahead and click the download button.",
     },
   ];
+  const HeroText = [
+    {
+      title: <h2 className="text-2xl font-semibold text-red-600">BANNER</h2>,
+      desc: (
+        <p className="mt-4 text-gray-800">
+          Let us guess. You've found an awesome YouTube channel with a stunning
+          banner that caught your eye. But you are wondering how to download it
+          without losing quality. Well, thats where our brand-new free YouTuber
+          banner downloader comes in. With it, you can grab stunning banners
+          from your favorite channels of the best quality.
+        </p>
+      ),
+    },
+  ];
   return (
     <div className="flex flex-col items-center min-h-screen bg-white">
       <section className="bg-white rounded-2xl shadow-2xl w-full max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-3xl xl:max-w-4xl mx-auto mt-44 mb-44">
@@ -191,7 +229,7 @@ export default function Page() {
               Enter the URL of a YouTube video to download{" "}
               <span className="text-black font-bold">Banner</span>
             </p>
-
+            <TextinHero data={HeroText} />
             <div className="w-full max-w-sm mx-auto mt-6 bg-transparent border rounded-full focus-within:border-blue-400 focus-within:ring focus-within:ring-blue-300 focus-within:ring-opacity-40">
               <form className="flex flex-col md:flex-row">
                 <input
@@ -240,7 +278,11 @@ export default function Page() {
       </section>
       <div className="container mx-auto px-4 mt-10">
         {/* Services Section */}
-        <Services header={serviceHeader} data={serviceData} />
+        <Services
+          header={serviceHeader}
+          data={serviceData}
+          header2={serviceHeader2}
+        />
         {/* Features Section */}
         <Features1 header={FeaturesHeader} data={Featuress} />
         {/* How to Use Section */}

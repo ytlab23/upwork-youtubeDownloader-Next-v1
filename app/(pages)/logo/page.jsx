@@ -7,6 +7,7 @@ import FAQ1 from "@/app/components/FAQ1";
 import CTA from "@/app/components/CTA";
 import Services from "@/app/components/Services1";
 import Use from "@/app/components/Use";
+import TextinHero from "@/app/components/TextinHero";
 
 export default function Page() {
   const [url, setUrl] = useState("");
@@ -61,8 +62,8 @@ export default function Page() {
       desc: (
         <p className="mt-4 text-gray-600">
           Our YouTube logo downloader is packed with a set of cool features to
-          make it easy for you to access your favorite logos. Here a quick
-          look at what makes our tool stand out:
+          make it easy for you to access your favorite logos. Here a quick look
+          at what makes our tool stand out:
         </p>
       ),
       imgLink: "./logo.png",
@@ -135,6 +136,23 @@ export default function Page() {
       ),
     },
   ];
+  const serviceHeader2 = [
+    {
+      title: (
+        <h2 className="text-3xl font-bold sm:text-4xl">
+          Who Can Use a <span className="text-red-600">You</span>Tube Logo
+          Downloader?
+        </h2>
+      ),
+      desc: (
+        <p className="mt-4 text-gray-600">
+          Our YouTube Logo Downloader is perfect for anyone who needs YouTube
+          logos in no time! Lets take a look at who can benefit from it:
+        </p>
+      ),
+      imgLink: "./Thumbnail.png",
+    },
+  ];
   const serviceData = [
     {
       header: "Beginners",
@@ -187,6 +205,20 @@ export default function Page() {
       data: "Click on the Logo button to extract it. Within seconds, you will see the logo that you have requested. Now, just download it!",
     },
   ];
+  const HeroText = [
+    {
+      title: <h2 className="text-2xl font-semibold text-red-600">LOGO</h2>,
+      desc: (
+        <p className="mt-4 text-gray-800">
+          Looking for a professional logo for your YouTube channel? Our YouTube
+          Logo Downloader makes it super easy to grab high-quality logos with
+          just a click. Just surf through YouTube to find the perfect
+          inspiration and paste its link to our tool. Thats all! You will get the
+          logo right into your device for customization.
+        </p>
+      ),
+    },
+  ];
   return (
     <div className="flex flex-col items-center min-h-screen bg-white">
       <section className="bg-white rounded-2xl shadow-2xl w-full max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-3xl xl:max-w-4xl mx-auto mt-44 mb-44">
@@ -200,7 +232,7 @@ export default function Page() {
               Enter the URL of a YouTube video to download the{" "}
               <span className="text-black font-bold">Logo</span>.
             </p>
-
+          <TextinHero data={HeroText}/>
             <div className="w-full max-w-sm mx-auto mt-6 bg-transparent border rounded-full focus-within:border-blue-400 focus-within:ring focus-within:ring-blue-300 focus-within:ring-opacity-40">
               <form className="flex flex-col md:flex-row">
                 <input
@@ -241,7 +273,11 @@ export default function Page() {
       </section>
       <div className="container mx-auto px-4 mt-10">
         {/* Services Section */}
-        <Services header={serviceHeader} data={serviceData} />
+        <Services
+          header={serviceHeader}
+          data={serviceData}
+          header2={serviceHeader2}
+        />
         {/* Features Section */}
         <Features1 header={FeaturesHeader} data={Featuress} />
         {/* How to Use Section */}

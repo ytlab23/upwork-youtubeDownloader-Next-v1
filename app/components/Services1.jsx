@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-export default function Services({ header, data }) {
+export default function Services({ header, data, header2 }) {
   return (
     <div>
       <div id="features" className="mt-10">
@@ -26,14 +26,29 @@ export default function Services({ header, data }) {
               </div>
             ))}
           </div>
+          <div className="flex flex-col gap-y-8 lg:items-center lg:gap-x-16 mt-16 ">
+            {header2.map((feature) => (
+              <div
+                className="mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left "
+                key={feature.title}
+              >
+                {feature.title}
+                {feature.desc}
+              </div>
+            ))}
+          </div>
+
           <div className="mt-16 grid divide-x divide-y divide-gray-100 overflow-hidden rounded-3xl border border-gray-100 text-gray-600 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4">
             {data.map((item, index) => (
-              <div className="group relative bg-white transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10" key={index}>
+              <div
+                className="group relative bg-white transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10"
+                key={index}
+              >
                 <div className="relative space-y-8 py-12 p-8">
                   <span className="inline-block rounded-lg bg-gray-50 p-3">
                     <img
                       src="/ribbon1.svg" // Path to the SVG in the public folder
-                      alt="Ribon Icon"
+                      alt="Ribbon Icon"
                       className="size-6" // Adjust size if needed
                     />
                   </span>

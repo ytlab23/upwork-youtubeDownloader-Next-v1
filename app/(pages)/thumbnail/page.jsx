@@ -8,6 +8,7 @@ import FAQ1 from "@/app/components/FAQ1";
 import CTA from "@/app/components/CTA";
 import Services from "@/app/components/Services1";
 import Use from "@/app/components/Use";
+import TextinHero from "@/app/components/TextinHero";
 
 export default function Page() {
   const [url, setUrl] = useState("");
@@ -136,6 +137,26 @@ export default function Page() {
       ),
     },
   ];
+  const serviceHeader2 = [
+    {
+      title: (
+        <h2 className="text-3xl font-bold sm:text-4xl">
+          Why You Need Our <span className="text-red-600">You</span>Tube
+          Thumbnail Downloader?
+        </h2>
+      ),
+      desc: (
+        <p className="mt-4 text-gray-600">
+          Designing a YouTube thumbnail from scratch is challenging, especially
+          if you are new to it. You need some professional inspiration to get
+          started. Thats where our tool comes in. You can download as many
+          professional-looking YT thumbnails as you like. Check out how it helps
+          YouTubers like you:
+        </p>
+      ),
+      imgLink: "./Thumbnail.png",
+    },
+  ];
   const serviceData = [
     {
       header: "Saves Time",
@@ -186,6 +207,21 @@ export default function Page() {
       data: "After pasting the link, the thumbnail will be displayed. Check whether it's the correct one and click on the Download button. The file gets downloaded within seconds!",
     },
   ];
+  const HeroText = [
+    {
+      title: <h2 className="text-2xl font-semibold text-red-600">THUMBNAIL</h2>,
+      desc: (
+        <p className="mt-4 text-gray-800">
+          Want a perfect thumbnail for your YouTube channel? Our YouTube
+          thumbnail downloader makes it easy for you. With just a few clicks,
+          you can grab high-quality thumbnails from any video in seconds. Simply
+          paste the link and edit the downloaded asset to create your own custom
+          thumbnail quickly. So, why settle with low-resolution or screenshot
+          images?
+        </p>
+      ),
+    },
+  ];
   return (
     <div className="flex flex-col items-center min-h-screen bg-white">
       <section className="bg-white rounded-2xl shadow-2xl w-full max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-3xl xl:max-w-4xl mx-auto mt-44 mb-44">
@@ -199,7 +235,7 @@ export default function Page() {
               Enter the URL of a YouTube video to download{" "}
               <span className="text-black font-bold">Thumbnail</span>
             </p>
-
+            <TextinHero data={HeroText} />
             <div className="w-full max-w-sm mx-auto mt-6 bg-transparent border rounded-full focus-within:border-blue-400 focus-within:ring focus-within:ring-blue-300 focus-within:ring-opacity-40">
               <form className="flex flex-col md:flex-row">
                 <input
@@ -245,7 +281,11 @@ export default function Page() {
 
       <div className="container mx-auto px-4 mt-10">
         {/* Services Section */}
-        <Services header={serviceHeader} data={serviceData} />
+        <Services
+          header={serviceHeader}
+          data={serviceData}
+          header2={serviceHeader2}
+        />
         {/* Features Section */}
         <Features1 header={FeaturesHeader} data={Featuress} />
         {/* How to Use Section */}

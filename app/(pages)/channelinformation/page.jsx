@@ -7,6 +7,7 @@ import FAQ1 from "@/app/components/FAQ1";
 import CTA from "@/app/components/CTA";
 import Services from "@/app/components/Services1";
 import Use from "@/app/components/Use";
+import TextinHero from "@/app/components/TextinHero";
 
 export default function Page() {
   const [url, setUrl] = useState("");
@@ -137,6 +138,23 @@ export default function Page() {
       ),
     },
   ];
+  const serviceHeader2 = [
+    {
+      title: (
+        <h2 className="text-3xl font-bold sm:text-4xl">
+          Best Practices for Using Channel Information Data
+        </h2>
+      ),
+      desc: (
+        <p className="mt-4 text-gray-600">
+          You might be thinking about how would random channel data help your
+          content creation process. Well, heres how successful YouTubers use
+          such data effectively:
+        </p>
+      ),
+      imgLink: "./Thumbnail.png",
+    },
+  ];
   const serviceData = [
     {
       header: "Optimize For SEO",
@@ -186,6 +204,24 @@ export default function Page() {
       data: "Within seconds, crucial channel information, such as the meta description, title, year of starting, location, etc., will be displayed. You can download them as JSON files for future reference.",
     },
   ];
+  const HeroText = [
+    {
+      title: (
+        <h2 className="text-2xl font-semibold text-red-600">
+          CHANNEL INFORMATION
+        </h2>
+      ),
+      desc: (
+        <p className="mt-4 text-gray-800">
+          Ever noticed that shiny golden play button on YouTubers profiles?
+          Well, its no coincidence. It took them years of competitor and niche
+          research to get there. But what if you can do the same within a couple
+          of seconds? Thats exactly what our Channel Information Extractor does:
+          it gives you the data to grow smarter and faster!
+        </p>
+      ),
+    },
+  ];
   return (
     <div className="flex flex-col items-center min-h-screen bg-white">
       <section className="bg-white rounded-2xl shadow-2xl w-full max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-3xl xl:max-w-4xl mx-auto mt-44 mb-44">
@@ -202,7 +238,7 @@ export default function Page() {
                 Channel Information{" "}
               </span>
             </p>
-
+            <TextinHero data={HeroText} />
             <div className="w-full max-w-sm mx-auto mt-6 bg-transparent border rounded-full focus-within:border-blue-400 focus-within:ring focus-within:ring-blue-300 focus-within:ring-opacity-40">
               <form className="flex flex-col md:flex-row items-center">
                 <input
@@ -245,7 +281,11 @@ export default function Page() {
       </section>
       <div className="container mx-auto px-4 mt-10">
         {/* Services Section */}
-        <Services header={serviceHeader} data={serviceData} />
+        <Services
+          header={serviceHeader}
+          data={serviceData}
+          header2={serviceHeader2}
+        />
         {/* Features Section */}
         <Features1 header={FeaturesHeader} data={Featuress} />
         {/* How to Use Section */}

@@ -24,182 +24,70 @@ export default function Services() {
               All-in-One <span style={{ color: "red" }}>You</span>Tube Toolkit
             </h2>
             <p className="text-gray-600">
-              Stop switching between the tabs of multiple websites. Download all
-              YouTube assets from a single, user-friendly platform. And that,
-              too, for free! Have a look at the five main tools in our platform.
+              Stop switching between tabs on multiple websites. Download all
+              YouTube assets from one place—free and user-friendly!
             </p>
           </div>
-          <div className="mt-16 grid divide-x divide-y divide-gray-100 overflow-hidden rounded-3xl border border-gray-100 text-gray-600 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4">
-            <div className="group relative bg-white transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
-              <div className="relative space-y-8 py-12 p-8">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/4341/4341139.png"
-                  className="w-12"
-                  width="512"
-                  height="512"
-                  alt="Thumbnail Download"
-                />
+          <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-gray-600">
+            {/* Thumbnail Downloader */}
+            <ServiceCard
+              title="Thumbnail Downloader"
+              description="First impressions matter! With our thumbnail download tool, you can instantly grab attention with the perfect visual for your video through a simple click. No more screenshot hassles or low-quality images. Get exactly what you need to showcase your content in the best light."
+              link="thumbnail"
+              imgSrc="https://cdn-icons-png.flaticon.com/512/4341/4341139.png"
+            />
 
-                <div className="space-y-2">
-                  <h5 className="text-xl font-semibold text-gray-700 transition group-hover:text-secondary">
-                    Thumbnail Downloader
-                  </h5>
-                  <p className="text-gray-600">
-                    First impressions matter! With our thumbnail download tool,
-                    you can instantly grab attention with the perfect visual for
-                    your video through a simple click. No more screenshot
-                    hassles or low-quality images. Get exactly what you need to
-                    showcase your content in the best light.
-                  </p>
-                </div>
-                <Link
-                  href="thumbnail"
-                  className="flex items-center justify-between group-hover:text-secondary"
-                >
-                  <span className="text-sm">Read more</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    className="w-5 h-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                </Link>
-              </div>
-            </div>
-            <div className="group relative bg-white transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
-              <div className="relative space-y-8 py-12 p-8">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/4341/4341134.png"
-                  className="w-12"
-                  width="512"
-                  height="512"
-                  alt="Profile Picture Download"
-                />
+            {/* Logo Downloader */}
+            <ServiceCard
+              title="Logo Downloader"
+              description="Your logo is the face of the brand. So, creating it from scratch is not advisable for beginners. With our logo downloader, you can easily save any YouTube channel's logo. Edit it with a random tool to create your own logo."
+              link="logo"
+              imgSrc="https://cdn-icons-png.flaticon.com/512/4341/4341134.png"
+            />
 
-                <div className="space-y-2">
-                  <h5 className="text-xl font-semibold text-gray-700 transition group-hover:text-secondary">
-                    Logo Downloader
-                  </h5>
-                  <p className="text-gray-600">
-                    Your logo is the face of the brand. So, creating it from
-                    scratch is not advisable for beginners. With our logo
-                    downloader, you can easily save any YouTube channel&apos;s logo.
-                    Edit it with a random tool to create your own logo.
-                  </p>
-                </div>
-                <Link
-                  href="logo"
-                  className="flex items-center justify-between group-hover:text-secondary"
-                >
-                  <span className="text-sm">Read more</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    className="w-5 h-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                </Link>
-              </div>
-            </div>
-            <div className="group relative bg-white transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
-              <div className="relative space-y-8 py-12 p-8">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/4341/4341160.png"
-                  className="w-12"
-                  width="512"
-                  height="512"
-                  alt="Channel Art Download"
-                />
+            {/* Banner Downloader */}
+            <ServiceCard
+              title="Banner Downloader"
+              description="Need a stunning banner to represent your YouTube channel? Simply paste the URL to your inspiring source channel. Our easy-to-use tool will fetch full-resolution banners instantly. Keep your website visitors hooked with eye-catching visuals!"
+              link="banner"
+              imgSrc="https://cdn-icons-png.flaticon.com/512/4341/4341160.png"
+            />
+            {/* Channel Information Downloader */}
+            <ServiceCard
+              title="Channel Information"
+              description="An in-depth competitor research is the first step to your YouTube channel's success. Our channel information extractor will give you all the juicy info in one place. Use this data to analyze trends and improve your own content strategy."
+              link="channelinformation"
+              imgSrc="https://cdn-icons-png.flaticon.com/512/4341/4341260.png"
+            />
 
-                <div className="space-y-2">
-                  <h5 className="text-xl font-semibold text-gray-700 transition group-hover:text-secondary">
-                    Banner Downloader
-                  </h5>
-                  <p className="text-gray-600">
-                    Need a stunning banner to represent your YouTube channel?
-                    Simply paste the URL to your inspiring source channel. Our
-                    easy-to-use tool will fetch full-resolution banners
-                    instantly. Keep your website visitors hooked with
-                    eye-catching visuals!
-                  </p>
-                </div>
-                <Link
-                  href="banner"
-                  className="flex items-center justify-between group-hover:text-secondary"
-                >
-                  <span className="text-sm">Read more</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    className="w-5 h-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                </Link>
-              </div>
-            </div>
-            <div className="group relative bg-white transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
-              <div className="relative space-y-8 py-12 p-8">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/4341/4341025.png"
-                  className="w-12"
-                  width="512"
-                  height="512"
-                  alt="Transcripts Download"
-                />
-
-                <div className="space-y-2">
-                  <h5 className="text-xl font-semibold text-gray-700 transition group-hover:text-secondary">
-                    Captions Download
-                  </h5>
-                  <p className="text-gray-600">
-                    Feeling trapped within language barriers? Well, our platform
-                    lets you download subtitles of any video easily. You can
-                    paste them to a translator to view the content in your local
-                    language. Luckily, our tool supports multiple languages and
-                    formats.
-                  </p>
-                </div>
-                <Link
-                  href="captions"
-                  className="flex items-center justify-between group-hover:text-secondary"
-                >
-                  <span className="text-sm">Read more</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    className="w-5 h-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                </Link>
-              </div>
-            </div>
+            {/* Captions Download */}
+            <ServiceCard
+              title="Captions Download"
+              description="Feeling trapped within language barriers? Well, our platform lets you download subtitles of any video easily. You can paste them to a translator to view the content in your local language. Luckily, our tool supports multiple languages and formats."
+              link="captions"
+              imgSrc="https://cdn-icons-png.flaticon.com/512/4341/4341025.png"
+            />
           </div>
         </div>
       </div>
+    </div>
+  );
+}
+
+function ServiceCard({ title, description, link, imgSrc }) {
+  return (
+    <div className="group relative bg-white rounded-lg shadow-lg p-8 transition transform hover:-translate-y-2 hover:shadow-xl">
+      <img src={imgSrc} className="w-12 mb-4 mx-auto" alt={title} />
+      <h5 className="text-xl font-semibold text-gray-700 text-center">
+        {title}
+      </h5>
+      <p className="mt-4 text-gray-600 text-center">{description}</p>
+      <Link
+        href={link}
+        className="mt-6 block text-center text-secondary font-medium text-red-600 hover:text-red-400"
+      >
+        Read more
+      </Link>
     </div>
   );
 }

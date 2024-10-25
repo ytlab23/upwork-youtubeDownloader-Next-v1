@@ -7,6 +7,7 @@ import FAQ1 from "@/app/components/FAQ1";
 import CTA from "@/app/components/CTA";
 import Services from "@/app/components/Services1";
 import Use from "@/app/components/Use";
+import TextinHero from "@/app/components/TextinHero";
 
 export default function Page() {
   const [url, setUrl] = useState("");
@@ -162,10 +163,32 @@ export default function Page() {
       ),
     },
   ];
+  const serviceHeader2 = [
+    {
+      title: (
+        <h2 className="text-3xl font-bold sm:text-4xl">
+          Who Can Use <span className="text-red-600">You</span>Tube Caption
+          Downloader?
+        </h2>
+      ),
+      desc: (
+        <p className="mt-4 text-gray-600">
+          Our YouTube caption extractor tool is practically needed for anyone
+          who wants to view the transcripts of a particular video. Here are some
+          sects that may find our tool most useful:
+        </p>
+      ),
+      imgLink: "./Thumbnail.png",
+    },
+  ];
   const serviceData = [
     {
       header: "Content Creators",
       desc: "Are you a YouTuber looking forward to reaching a wide international audience? Then, captions are a must. Our YT caption extractor lets you get an accurate transcript of your videos with just a single click.",
+    },
+    {
+      header: "Language Learners",
+      desc: "Understanding a foreign-language video from the first view could be a bit challenging. That’s where you need our YT caption downloader tool. Read along as you watch for better pronunciation and vocabulary.",
     },
     {
       header: "Students and Researchers",
@@ -211,6 +234,19 @@ export default function Page() {
       data: "Now, click on the download button to save the subtitle file to your device in a PDF format.",
     },
   ];
+  const HeroText = [
+    {
+      title: <h2 className="text-2xl font-semibold text-red-600">CAPTIONS</h2>,
+      desc: (
+        <p className="mt-4 text-gray-800">
+          Tired of manually transcribing YouTube videos? Get captions instantly
+          by just pasting the video link! Our YouTube Caption Tool instantly
+          grabs the captions from any video—no hassle, no waiting. Try it now
+          for free!
+        </p>
+      ),
+    },
+  ];
   return (
     <div className="flex flex-col items-center min-h-screen bg-white">
       <section className="bg-white rounded-2xl shadow-2xl w-full max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-3xl xl:max-w-4xl mx-auto mt-44 mb-44">
@@ -224,7 +260,7 @@ export default function Page() {
               Enter the URL of a YouTube video to download
               <span className="text-black font-bold"> Captions </span>
             </p>
-
+            <TextinHero data={HeroText} />
             <div className="w-full max-w-sm mx-auto mt-6 bg-transparent border rounded-full focus-within:border-blue-400 focus-within:ring focus-within:ring-blue-300 focus-within:ring-opacity-40">
               <form className="flex flex-col md:flex-row">
                 <input
@@ -307,7 +343,11 @@ export default function Page() {
       </section>
       <div className="container mx-auto px-4 mt-10">
         {/* Services Section */}
-        <Services header={serviceHeader} data={serviceData} />
+        <Services
+          header={serviceHeader}
+          data={serviceData}
+          header2={serviceHeader2}
+        />
         {/* Features Section */}
         <Features1 header={FeaturesHeader} data={Featuress} />
         {/* How to Use Section */}

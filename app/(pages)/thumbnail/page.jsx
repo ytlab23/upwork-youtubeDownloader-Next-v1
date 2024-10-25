@@ -160,19 +160,19 @@ export default function Page() {
   const serviceData = [
     {
       header: "Saves Time",
-      desc: "With our thumbnail downloader, you can quickly save thumbnails from any video without spending hours creating your own. Just download and use them as needed!",
+      desc: "In case you are not familiar with design tools, the thumbnail creation process can take up hours. With our downloader, you can skip the hassle. Simply download the thumbnail from any video and customize it as you like from any software tool you like—no need to start over!",
     },
     {
-      header: "Easy Access to Quality Thumbnails",
-      desc: "Our tool allows you to effortlessly download high-quality thumbnails from popular videos, giving you access to great visuals without the hassle of design.",
+      header: "Inspires Creative Ideas",
+      desc: "Not sure how to design your thumbnail? Our tool helps you collect thumbnails from popular videos of your niche. You can use them as inspiration for your own work.",
     },
     {
-      header: "Enhances Your Videos",
-      desc: "Using professionally created thumbnails can significantly improve your video’s performance by attracting more viewers and increasing click-through rates.",
+      header: "Improves Video Performance",
+      desc: "An eye-catching thumbnail captures the attention of users and results in more clicks. Our tool lets you use professional-looking thumbnails from your competitors to improve your videos performance.",
     },
     {
-      header: "Research Competitors",
-      desc: "Collect thumbnails from top competitors to analyze their styles and trends. This helps you understand what works in your niche and allows you to download effective thumbnails for inspiration.",
+      header: "Trend Analysis",
+      desc: "You can collect YouTube thumbnails from all your competitors to analyze what works for your audience. Compare the thumbnails of the top-performing videos. Do they have any recurring patterns like color or layout? Use these insights to create your own engaging thumbnails that draw viewers in.",
     },
   ];
   const UseHeader = [

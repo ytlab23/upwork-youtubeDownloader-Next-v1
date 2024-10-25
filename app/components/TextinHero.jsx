@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ({ data }) {
+export default function TextinHero({ data }) {
   return (
     <div>
       {data.map((item, index) => (

@@ -164,7 +164,7 @@ export default function Page() {
     },
     {
       header: "Create a First Impression",
-      desc: "A well-designed banner can catch your viewers@apos; attention instantly. It helps your channel stand out and hooks in new visitors to explore your content.",
+      desc: "A well-designed banner can catch your viewers; attention instantly. It helps your channel stand out and hooks in new visitors to explore your content.",
     },
     {
       header: "Promote Your Social Media Links",
@@ -207,7 +207,7 @@ export default function Page() {
       title: <h2 className="text-2xl font-semibold text-red-600">BANNER</h2>,
       desc: (
         <p className="mt-4 text-gray-800">
-          Let us guess. You've found an awesome YouTube channel with a stunning
+          Let us guess. You&apos;ve found an awesome YouTube channel with a stunning
           banner that caught your eye. But you are wondering how to download it
           without losing quality. Well, thats where our brand-new free YouTuber
           banner downloader comes in. With it, you can grab stunning banners

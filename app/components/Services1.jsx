@@ -6,7 +6,7 @@ export default function Services({ header, data, header2 }) {
     <div>
       <div id="features" className="mt-10">
         <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
-          <div className="md:w-2/3 lg:w-1/2">
+          <div style={{ width: "100%" }}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -20,7 +20,7 @@ export default function Services({ header, data, header2 }) {
               ></path>
             </svg>
             {header.map((item, index) => (
-              <div key={index}>
+              <div key={index} className="flex flex-row-reverse mt-8">
                 {item.header}
                 {item.desc}
               </div>

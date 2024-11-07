@@ -115,8 +115,8 @@ export default function Page() {
   const serviceHeader = [
     {
       header: (
-        <h2 className="my-8 text-2xl font-bold text-gray-700 md:text-4xl">
-          What is a <span className="text-red-600">You</span>Tube Banner
+        <h2 className="mt-0 mb-8 text-2xl font-bold text-gray-700 md:text-4xl">
+          About Our <span className="text-red-600">You</span>Tube Banner
           Downloader?
         </h2>
       ),

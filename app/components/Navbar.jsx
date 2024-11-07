@@ -1,7 +1,7 @@
 "use client";
 // Components/Navbar.js
 import React, { useState } from "react";
-import Link  from "next/link";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +9,7 @@ export default function Navbar() {
     { name: "Thumbnail", Links: "thumbnail" },
     { name: "Logo", Links: "logo" },
     { name: "Banner", Links: "banner" },
-    { name: "ChannelInformation", Links: "channelinformation" },
+    { name: "Channel Information", Links: "channelinformation" },
     { name: "Captions", Links: "captions" },
   ];
   return (
@@ -17,9 +17,13 @@ export default function Navbar() {
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href='/'> <h1 className="text-2xl font-bold"><span className='text-red-700'>YouTube</span>Downloader</h1>
+          <Link href="/">
+            {" "}
+            <h1 className="text-2xl font-bold">
+              <span className="text-red-700">YouTube</span>Downloade.org
+            </h1>
           </Link>
-         
+
           {/* Desktop Menu */}
           <nav aria-label="Global" className="hidden md:flex md:items-center">
             <ul className="flex items-center gap-6 text-sm">

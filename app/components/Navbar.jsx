@@ -20,7 +20,7 @@ export default function Navbar() {
           <Link href="/">
             {" "}
             <h1 className="text-2xl font-bold">
-              <span className="text-red-700">YouTube</span>Downloade.org
+              <span className="text-red-700">YouTube</span>Download.org
             </h1>
           </Link>
 

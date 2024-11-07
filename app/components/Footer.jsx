@@ -16,7 +16,7 @@ export default function Footer() {
             <div>
               <div className="flex justify-center text-black lg:justify-start">
                 <h1 className="text-2xl font-bold">
-                  <span className="text-red-700">YouTube</span>Downloader
+                  <span className="text-red-700">YouTube</span>Download.org
                 </h1>
               </div>
 

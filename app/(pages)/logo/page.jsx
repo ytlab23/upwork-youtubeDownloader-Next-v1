@@ -213,8 +213,8 @@ export default function Page() {
           Looking for a professional logo for your YouTube channel? Our YouTube
           Logo Downloader makes it super easy to grab high-quality logos with
           just a click. Just surf through YouTube to find the perfect
-          inspiration and paste its link to our tool. Thats all! You will get the
-          logo right into your device for customization.
+          inspiration and paste its link to our tool. Thats all! You will get
+          the logo right into your device for customization.
         </p>
       ),
     },
@@ -232,7 +232,7 @@ export default function Page() {
               Enter the URL of a YouTube video to download the{" "}
               <span className="text-black font-bold">Logo</span>.
             </p>
-          <TextinHero data={HeroText}/>
+
             <div className="w-full max-w-sm mx-auto mt-6 bg-transparent border rounded-full focus-within:border-blue-400 focus-within:ring focus-within:ring-blue-300 focus-within:ring-opacity-40">
               <form className="flex flex-col md:flex-row">
                 <input
@@ -251,7 +251,7 @@ export default function Page() {
                 </button>
               </form>
             </div>
-
+            <TextinHero data={HeroText} />
             {error && <p className="mt-4 text-red-500">{error}</p>}
 
             {assets && assets.logo && (

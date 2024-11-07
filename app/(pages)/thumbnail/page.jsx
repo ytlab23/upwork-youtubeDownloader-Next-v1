@@ -235,7 +235,7 @@ export default function Page() {
               Enter the URL of a YouTube video to download{" "}
               <span className="text-black font-bold">Thumbnail</span>
             </p>
-            <TextinHero data={HeroText} />
+          
             <div className="w-full max-w-sm mx-auto mt-6 bg-transparent border rounded-full focus-within:border-blue-400 focus-within:ring focus-within:ring-blue-300 focus-within:ring-opacity-40">
               <form className="flex flex-col md:flex-row">
                 <input
@@ -254,6 +254,7 @@ export default function Page() {
                 </button>
               </form>
             </div>
+            <TextinHero data={HeroText} />
 
             {error && <p className="mt-4 text-red-500">{error}</p>}
 

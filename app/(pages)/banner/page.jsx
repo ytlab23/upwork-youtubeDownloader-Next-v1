@@ -207,11 +207,11 @@ export default function Page() {
       title: <h2 className="text-2xl font-semibold text-red-600">BANNER</h2>,
       desc: (
         <p className="mt-4 text-gray-800">
-          Let us guess. You&apos;ve found an awesome YouTube channel with a stunning
-          banner that caught your eye. But you are wondering how to download it
-          without losing quality. Well, thats where our brand-new free YouTuber
-          banner downloader comes in. With it, you can grab stunning banners
-          from your favorite channels of the best quality.
+          Let us guess. You&apos;ve found an awesome YouTube channel with a
+          stunning banner that caught your eye. But you are wondering how to
+          download it without losing quality. Well, thats where our brand-new
+          free YouTuber banner downloader comes in. With it, you can grab
+          stunning banners from your favorite channels of the best quality.
         </p>
       ),
     },
@@ -229,7 +229,7 @@ export default function Page() {
               Enter the URL of a YouTube video to download{" "}
               <span className="text-black font-bold">Banner</span>
             </p>
-            <TextinHero data={HeroText} />
+
             <div className="w-full max-w-sm mx-auto mt-6 bg-transparent border rounded-full focus-within:border-blue-400 focus-within:ring focus-within:ring-blue-300 focus-within:ring-opacity-40">
               <form className="flex flex-col md:flex-row">
                 <input
@@ -248,7 +248,7 @@ export default function Page() {
                 </button>
               </form>
             </div>
-
+            <TextinHero data={HeroText} />
             {error && <p className="mt-4 text-red-500">{error}</p>}
 
             {assets && (

@@ -128,7 +128,7 @@ export default function Page() {
             legal to download
           </a>
           YouTube channel banners for collection or personal projects. However,
-          using someone else's banner without permission for your own channel is
+          using someone elses banner without permission for your own channel is
           a copyright violation.
         </>
       ),

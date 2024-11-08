@@ -109,7 +109,7 @@ export default function Page() {
           No matter what type of logo you need, you can use our tool. We can
           extract resources like
           <a
-            href="https://youtubedownload.org/banner"
+            href="https://youtubedownload.org/thumbnail"
             target="_blank"
             rel="noopener noreferrer"
             className="underline text-red-600 hover:text-red-800"
@@ -180,7 +180,7 @@ export default function Page() {
         </h2>
       ),
       desc: (
-        <p className="text-gray-600">
+        <p className="text-gray-600 pr-3">
           A YouTube Logo Downloader is an online tool that lets you easily
           download the logo of any YouTube channel. You can customize them to
           create your own channel logo without breaking any copyright laws.

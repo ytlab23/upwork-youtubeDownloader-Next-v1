@@ -149,7 +149,7 @@ export default function Page() {
         </h2>
       ),
       desc: (
-        <p className="text-gray-600">
+        <p className="text-gray-600 pr-3">
           As the name suggests, YouTube banner downloader is a tool that lets
           you download the banner or cover image of any specific YouTube
           channel. It can save you valuable time and effort in editing manually

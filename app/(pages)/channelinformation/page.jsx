@@ -78,7 +78,7 @@ export default function Page() {
             href="https://support.google.com/youtube/answer/11914225?hl=en&co=YOUTUBE._YTVideoType%3Dvideo&sjid=3568816026513773970-AP"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline text-blue-600 hover:text-blue-800"
+            className="underline text-red-600 hover:text-red-800"
           >
             YouTube SEO
           </a>
@@ -105,7 +105,7 @@ export default function Page() {
             href="https://youtubedownload.org/"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline text-blue-600 hover:text-blue-800"
+            className="underline text-red-600 hover:text-red-800"
           >
             YouTube downloader
           </a>
@@ -157,7 +157,7 @@ export default function Page() {
         </h2>
       ),
       desc: (
-        <p className="text-gray-600">
+        <p className="text-gray-600 pr-3">
           A YouTube Channel Information downloader is a specialized tool that
           gathers and extracts detailed information about a YouTube channel from
           a URL. It is mainly used by content creators to understand their
@@ -200,7 +200,7 @@ export default function Page() {
             href="https://support.google.com/youtube/answer/72851?hl=en&co=GENIE.Platform%3DDesktop&sjid=3568816026513773970-AP"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline text-blue-600 hover:text-blue-800"
+            className="underline text-red-600 hover:text-red-800"
           >
             monetization
           </a>

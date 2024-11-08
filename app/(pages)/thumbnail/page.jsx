@@ -158,7 +158,7 @@ export default function Page() {
         </h2>
       ),
       desc: (
-        <p className="text-gray-600">
+        <p className="text-gray-600 pr-3">
           YouTube Thumbnail Downloader is a free online tool designed to help
           users download thumbnail images from YouTube videos. Just paste the
           link, and you&apos;re good to go!
@@ -209,7 +209,7 @@ export default function Page() {
             href="https://support.google.com/youtube/answer/13861714?hl=en&ref_topic=9257785&sjid=3568816026513773970-AP"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline text-blue-600 hover:text-blue-800"
+            className="underline text-red-600 hover:text-red-800"
           >
             Compare the thumbnails
           </a>

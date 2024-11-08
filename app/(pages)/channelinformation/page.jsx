@@ -72,7 +72,22 @@ export default function Page() {
     },
     {
       header: "SEO Data",
-      desc: "YouTube SEO is something thats not familiar to even the most established content creators. Our tool makes this easy by giving you access to the meta title and description of any channel. You can refer to the metadata of successful channels and analyze the patterns to create your own.",
+      desc: (
+        <>
+          <a
+            href="https://support.google.com/youtube/answer/11914225?hl=en&co=YOUTUBE._YTVideoType%3Dvideo&sjid=3568816026513773970-AP"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-blue-600 hover:text-blue-800"
+          >
+            YouTube SEO
+          </a>
+          is something that’s not familiar to even the most established content
+          creators. Our tool makes this easy by giving you access to the meta
+          title and description of any channel. You can refer to the metadata of
+          successful channels and analyze the patterns to create your own.
+        </>
+      ),
     },
     {
       header: "Simple & User-Friendly Interface",
@@ -84,7 +99,20 @@ export default function Page() {
     },
     {
       header: "Real-Time Analysis",
-      desc: "YouTube downloader always fetches the latest information from YouTube. Thus, you can always plan content based on current data stats and trends.",
+      desc: (
+        <>
+          <a
+            href="https://youtubedownload.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-blue-600 hover:text-blue-800"
+          >
+            YouTube downloader
+          </a>
+          always fetches the latest information from YouTube. Thus, you can
+          always plan content based on current data stats and trends.
+        </>
+      ),
     },
     {
       header: "Location Information",
@@ -162,7 +190,22 @@ export default function Page() {
     },
     {
       header: "Plan Your Channel Growth",
-      desc: "With our tool, you can know the year in which a channel has started. This way, you can set realistic expectations at each content creation stage. You can also compare your channel’s age with others to evaluate your progress and when you can reach monetization.",
+      desc: (
+        <>
+          With our tool, you can know the year in which a channel has started.
+          This way, you can set realistic expectations at each content creation
+          stage. You can also compare your channel’s age with others to evaluate
+          your progress and when you can reach the
+          <a
+            href="https://support.google.com/youtube/answer/72851?hl=en&co=GENIE.Platform%3DDesktop&sjid=3568816026513773970-AP"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-blue-600 hover:text-blue-800"
+          >
+            monetization
+          </a>
+        </>
+      ),
     },
     {
       header: "Analyze Channel Titles",

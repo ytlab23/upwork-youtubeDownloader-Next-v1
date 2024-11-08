@@ -76,7 +76,23 @@ export default function Page() {
     },
     {
       header: "High-Quality Logos",
-      desc: "A logo is the face of your channel, so quality obviously matters. Thats why we have designed the system to extract logos at the best available quality as per YouTubes guidelines. You dont need to run behind any third-party tools to refine the image quality.",
+      desc: (
+        <>
+          High-Quality Logos A logo is the face of your channel, so quality
+          obviously matters. That’s why we have designed the system to extract
+          logos at the best available quality as per
+          <a
+            href="https://support.google.com/youtube/answer/1722171"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-red-600 hover:text-red-800"
+          >
+            YouTube guidelines.
+          </a>
+          You don’t need to run behind any third-party tools to refine the image
+          quality.
+        </>
+      ),
     },
     {
       header: "Guaranteed Safety",
@@ -88,14 +104,50 @@ export default function Page() {
     },
     {
       header: "Supports All Public Channels",
-      desc: "No matter what type of logo you need, you can use our tool. We can extract resources like YouTube banners and logos from any public channel with just a link.",
+      desc: (
+        <>
+          No matter what type of logo you need, you can use our tool. We can
+          extract resources like
+          <a
+            href="https://youtubedownload.org/banner"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-red-600 hover:text-red-800"
+          >
+            Thumbnail
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://youtubedownload.org/logo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-red-600 hover:text-red-800"
+          >
+            logos
+          </a>
+          from any public channel with just a link.
+        </>
+      ),
     },
   ];
   const FAQ = [
     {
       question: "Can I use downloaded logos for my own projects?",
-      answer:
-        "You can use downloaded logos for personal projects. However, it is better to ask for permission if you plan to use them for commercial purposes or in any way that results in copyright infringement.",
+      answer: (
+        <>
+          You can use downloaded logos for personal projects. However, it is
+          better to ask for permission if you plan to use them for commercial
+          purposes or in any way that results in
+          <a
+            href="https://www.youtube.com/creators/how-things-work/policies-guidelines/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-red-600 hover:text-red-800"
+          >
+            copyright infringement.
+          </a>
+        </>
+      ),
     },
     {
       question: "What if I didnt get the logo I wanted?",

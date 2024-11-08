@@ -72,7 +72,21 @@ export default function Page() {
 
     {
       header: "High-Quality Thumbnails",
-      desc: "Thumbnail quality is obviously one of the main ranking factors of a YouTube video. That’s why we have designed our system to deliver original thumbnails from any video in the highest quality available. ",
+      desc: (
+        <>
+          <a
+            href="https://support.google.com/youtube/answer/72431?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-red-600 hover:text-red-800"
+          >
+            Thumbnail
+          </a>
+          quality is obviously one of the main ranking factors of a YouTube
+          video. Thats why we have designed our system to deliver original
+          thumbnails from any video in the highest quality available.
+        </>
+      ),
     },
     {
       header: "No Software Installation",
@@ -80,7 +94,22 @@ export default function Page() {
     },
     {
       header: "Compatible With All Devices",
-      desc: "Our platform runs like a charm across all devices. The interface is specifically optimized for both desktops and smartphones so that you can download resources like YT channel logos, banners, thumbnails, etc., from anywhere.",
+      desc: (
+        <>
+          Our platform runs like a charm across all devices. The interface is
+          specifically optimized for both desktops and smartphones so that you
+          can download resources like
+          <a
+            href="https://youtubedownload.org/logo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-red-600 hover:text-red-800"
+          >
+             YT channel logos
+          </a>
+          banners, thumbnails, etc., from anywhere.
+        </>
+      ),
     },
     {
       header: "100% Free",
@@ -124,7 +153,7 @@ export default function Page() {
     {
       header: (
         <h2 className="mt-0 mb-8 text-2xl font-bold text-gray-700 md:text-4xl text-right">
-          About Our  <span className="text-red-600">You</span>Tube Thumbnail
+          About Our <span className="text-red-600">You</span>Tube Thumbnail
           Downloader?
         </h2>
       ),
@@ -172,7 +201,23 @@ export default function Page() {
     },
     {
       header: "Trend Analysis",
-      desc: "You can collect YouTube thumbnails from all your competitors to analyze what works for your audience. Compare the thumbnails of the top-performing videos. Do they have any recurring patterns like color or layout? Use these insights to create your own engaging thumbnails that draw viewers in.",
+      desc: (
+        <>
+          You can collect YouTube thumbnails from all your competitors to
+          analyze what works for your audience.
+          <a
+            href="https://support.google.com/youtube/answer/13861714?hl=en&ref_topic=9257785&sjid=3568816026513773970-AP"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-blue-600 hover:text-blue-800"
+          >
+            Compare the thumbnails
+          </a>
+          of the top-performing videos. Do they have any recurring patterns like
+          color or layout? Use these insights to create your own engaging
+          thumbnails that draw viewers in.
+        </>
+      ),
     },
   ];
   const UseHeader = [
@@ -235,7 +280,7 @@ export default function Page() {
               Enter the URL of a YouTube video to download{" "}
               <span className="text-black font-bold">Thumbnail</span>
             </p>
-          
+
             <div className="w-full max-w-sm mx-auto mt-6 bg-transparent border rounded-full focus-within:border-blue-400 focus-within:ring focus-within:ring-blue-300 focus-within:ring-opacity-40">
               <form className="flex flex-col md:flex-row">
                 <input

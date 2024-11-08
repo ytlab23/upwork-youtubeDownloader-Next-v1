@@ -120,8 +120,22 @@ export default function Page() {
   const FAQ = [
     {
       question: "Can I download captions from any YouTube video?",
-      answer:
-        "No, it depends on the subtitle settings. You can only download captions from videos that have them enabled. In case the video is private, you cannot download the transcript even if it is enabled.",
+      answer: (
+        <>
+          Can I download captions from any YouTube video? No, it depends on the
+          <a
+            href="https://support.google.com/youtube/answer/100078?hl=en&sjid=3568816026513773970-AP"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-red-600 hover:text-red-800"
+          >
+            subtitle settings
+          </a>
+          You can only download captions from videos that have them enabled. In
+          case the video is private, you cannot download the transcript even if
+          it is enabled.
+        </>
+      ),
     },
     {
       question: "How accurate are the auto-generated captions?",
@@ -130,13 +144,40 @@ export default function Page() {
     },
     {
       question: "Can I edit the downloaded caption files?",
-      answer:
-        "Of course. You will download the subtitles from our website in a PDF format. You can use any PDF editor tool or convert it to another format to edit the subtitles.",
+      answer: (
+        <>
+          No, it depends on the
+          <a
+            href="https://support.google.com/youtube/answer/100078?hl=en&sjid=3568816026513773970-AP"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-red-600 hover:text-red-800"
+          >
+            subtitle settings
+          </a>
+          You can only download captions from videos that have them enabled. In
+          case the video is private, you cannot download the transcript even if
+          it is enabled.
+        </>
+      ),
     },
     {
       question: "Can I download multiple subtitles at once?",
-      answer:
-        "No, you can download captions from only one video at a single run. However, you can use our tool without any restrictions. That means you can download subtitles for as many videos as you want.",
+      answer: (
+        <>
+          Of course. You will download the subtitles from our website in a PDF
+          format. You can use any PDF editor tool or convert it to another
+          format to
+          <a
+            href="https://support.google.com/youtube/answer/2734705?hl=en&sjid=3568816026513773970-AP"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-red-600 hover:text-red-800"
+          >
+            edit the subtitles.
+          </a>
+        </>
+      ),
     },
   ];
   const CtaData = [

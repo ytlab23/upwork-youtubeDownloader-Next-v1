@@ -81,7 +81,21 @@ export default function Page() {
     },
     {
       header: "No Sign-Up Required",
-      desc: "Worried about any sort of data leaks? Well, you need not share any personal information to create an account on our tool. Simply paste the link and download your favorite banner instantly.",
+      desc: (
+        <>
+          Worried about any sort of data leaks? Well, you need not share any
+          <a
+            href="https://support.google.com/youtube/answer/2801895?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-red-600 hover:text-red-800"
+          >
+            personal information
+          </a>
+          to create an account on our tool. Simply paste the link and download
+          your favorite banner instantly.
+        </>
+      ),
     },
   ];
   const FAQ = [
@@ -102,8 +116,22 @@ export default function Page() {
     },
     {
       question: "Is it legal to download YouTube channel banners?",
-      answer:
-        "Yes, it is legal to download YouTube channel banners for collection or personal projects. However, using someone elses banner without permission for your own channel is a copyright violation.",
+      answer: (
+        <>
+          Yes, it is
+          <a
+            href="https://support.google.com/youtube/answer/9783148?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-red-600 hover:text-red-800"
+          >
+            legal to download
+          </a>
+          YouTube channel banners for collection or personal projects. However,
+          using someone else's banner without permission for your own channel is
+          a copyright violation.
+        </>
+      ),
     },
   ];
   const CtaData = [
@@ -156,7 +184,22 @@ export default function Page() {
     },
     {
       header: "Sets Expectations",
-      desc: "Images like banners and logos tell visitors what your channel is about at a glance. As a result, they will get an idea of what to expect from your channel. This way, you can target and drive the right audience to your channel.",
+      desc: (
+        <>
+          Images like
+          <a
+            href="https://youtubedownload.org/banner"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-red-600 hover:text-red-800"
+          >
+            banners
+          </a>
+          and logos tell visitors what your channel is about at a glance. As a
+          result, they will get an idea of what to expect from your channel.
+          This way, you can target and drive the right audience to your channel.
+        </>
+      ),
     },
     {
       header: "Professional Look",

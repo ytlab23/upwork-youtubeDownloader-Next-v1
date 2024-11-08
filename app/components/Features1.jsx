@@ -28,9 +28,9 @@ export default function Features1({header,data}) {
 
                   <h2 className="mt-2 font-bold">{feature.header}</h2>
 
-                  <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
+                  <div className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
                     {feature.desc}
-                  </p>
+                  </div>
                 </a>
               ))}
             </div>

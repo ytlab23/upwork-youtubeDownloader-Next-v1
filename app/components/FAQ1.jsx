@@ -61,9 +61,9 @@ const FAQ1 = ({data}) => {
                     </span>
                   </summary>
 
-                  <p className="mt-4 leading-relaxed text-gray-700">
+                  <div className="mt-4 leading-relaxed text-gray-700">
                     {faq.answer}
-                  </p>
+                  </div>
                 </details>
               </div>
             ))}

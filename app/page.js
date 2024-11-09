@@ -80,7 +80,7 @@ export default function Home() {
       answer: (
         <>
           Our website specializes in tools designed specifically for downloading
-          YouTube content. If you're interested in additional tools, such as
+          YouTube content. If you&apos;re interested in additional tools, such as
           those for YouTube SEO and analytics, we recommend exploring
           <a
             href="https://www.lenostube.com/en/all-tools/"

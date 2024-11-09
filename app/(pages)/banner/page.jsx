@@ -84,14 +84,16 @@ export default function Page() {
       desc: (
         <>
           Worried about any sort of data leaks? Well, you need not share any
-          <a
-            href="https://support.google.com/youtube/answer/2801895?hl=en"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline text-red-600 hover:text-red-800"
-          >
-            personal information
-          </a>
+          <span className="mx-2">
+            <a
+              href="https://support.google.com/youtube/answer/2801895?hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline text-red-600 hover:text-red-800"
+            >
+              personal information
+            </a>
+          </span>
           to create an account on our tool. Simply paste the link and download
           your favorite banner instantly.
         </>
@@ -119,14 +121,16 @@ export default function Page() {
       answer: (
         <>
           Yes, it is
-          <a
-            href="https://support.google.com/youtube/answer/9783148?hl=en"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline text-red-600 hover:text-red-800"
-          >
-            legal to download
-          </a>
+          <span className="mx-2">
+            <a
+              href="https://support.google.com/youtube/answer/9783148?hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline text-red-600 hover:text-red-800"
+            >
+              legal to download
+            </a>
+          </span>
           YouTube channel banners for collection or personal projects. However,
           using someone elses banner without permission for your own channel is
           a copyright violation.
@@ -187,14 +191,16 @@ export default function Page() {
       desc: (
         <>
           Images like
-          <a
-            href="https://youtubedownload.org/banner"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline text-red-600 hover:text-red-800"
-          >
-            banners
-          </a>
+          <span className="mx-2">
+            <a
+              href="https://youtubedownload.org/banner"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline text-red-600 hover:text-red-800"
+            >
+              banners
+            </a>
+          </span>
           and logos tell visitors what your channel is about at a glance. As a
           result, they will get an idea of what to expect from your channel.
           This way, you can target and drive the right audience to your channel.

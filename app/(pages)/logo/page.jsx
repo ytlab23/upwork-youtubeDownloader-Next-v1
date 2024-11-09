@@ -79,18 +79,20 @@ export default function Page() {
       desc: (
         <>
           High-Quality Logos A logo is the face of your channel, so quality
-          obviously matters. That’s why we have designed the system to extract
-          logos at the best available quality as per
-          <a
-            href="https://support.google.com/youtube/answer/1722171"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline text-red-600 hover:text-red-800"
-          >
-            YouTube guidelines.
-          </a>
-          You don’t need to run behind any third-party tools to refine the image
-          quality.
+          obviously matters. That&apos;s why we have designed the system to
+          extract logos at the best available quality as per
+          <span className="mx-2">
+            <a
+              href="https://support.google.com/youtube/answer/1722171"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline text-red-600 hover:text-red-800"
+            >
+              YouTube guidelines.
+            </a>
+          </span>
+          You don&apos;t need to run behind any third-party tools to refine the
+          image quality.
         </>
       ),
     },
@@ -108,23 +110,27 @@ export default function Page() {
         <>
           No matter what type of logo you need, you can use our tool. We can
           extract resources like
-          <a
-            href="https://youtubedownload.org/thumbnail"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline text-red-600 hover:text-red-800"
-          >
-            Thumbnail
-          </a>{" "}
+          <span className="mx-2">
+            <a
+              href="https://youtubedownload.org/thumbnail"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline text-red-600 hover:text-red-800"
+            >
+              Thumbnail
+            </a>{" "}
+          </span>
           and{" "}
-          <a
-            href="https://youtubedownload.org/logo"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline text-red-600 hover:text-red-800"
-          >
-            logos
-          </a>
+          <span className="mx-2">
+            <a
+              href="https://youtubedownload.org/logo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline text-red-600 hover:text-red-800"
+            >
+              logos
+            </a>
+          </span>
           from any public channel with just a link.
         </>
       ),
@@ -138,14 +144,16 @@ export default function Page() {
           You can use downloaded logos for personal projects. However, it is
           better to ask for permission if you plan to use them for commercial
           purposes or in any way that results in
-          <a
-            href="https://www.youtube.com/creators/how-things-work/policies-guidelines/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline text-red-600 hover:text-red-800"
-          >
-            copyright infringement.
-          </a>
+          <span className="mx-2">
+            <a
+              href="https://www.youtube.com/creators/how-things-work/policies-guidelines/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline text-red-600 hover:text-red-800"
+            >
+              copyright infringement.
+            </a>
+          </span>
         </>
       ),
     },

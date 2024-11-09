@@ -76,20 +76,22 @@ export default function Home() {
         "No. We comply with all data regulation policies and do not keep the downloaded assets on our devices.",
     },
     {
-      question: "Where can I find  more free YouTube tools?",
+      question: "Where can I find more free YouTube tools?",
       answer: (
         <>
           Our website specializes in tools designed specifically for downloading
-          YouTube content. If you&apos;re interested in additional tools, such as
-          those for YouTube SEO and analytics, we recommend exploring
-          <a
-            href="https://www.lenostube.com/en/all-tools/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline text-red-600 hover:text-red-800"
-          >
-            these free options.
-          </a>
+          YouTube content. If you&apos;re interested in additional tools, such
+          as those for YouTube SEO and analytics, we recommend exploring
+          <span className="mx-2">
+            <a
+              href="https://www.lenostube.com/en/all-tools/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline text-red-600 hover:text-red-800"
+            >
+              these free options.
+            </a>
+          </span>
         </>
       ),
     },

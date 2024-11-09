@@ -123,7 +123,7 @@ export default function Page() {
       answer: (
         <>
           Can I download captions from any YouTube video? No, it depends on the
-          <span className="mx-2">
+          {"  "}
             <a
               href="https://support.google.com/youtube/answer/100078?hl=en&sjid=3568816026513773970-AP"
               target="_blank"
@@ -132,7 +132,7 @@ export default function Page() {
             >
               subtitle settings
             </a>
-          </span>
+            {"  "}
           You can only download captions from videos that have them enabled. In
           case the video is private, you cannot download the transcript even if
           it is enabled.
@@ -149,7 +149,7 @@ export default function Page() {
       answer: (
         <>
           No, it depends on the
-          <span className="mx-2">
+          {"  "}
             <a
               href="https://support.google.com/youtube/answer/100078?hl=en&sjid=3568816026513773970-AP"
               target="_blank"
@@ -158,7 +158,7 @@ export default function Page() {
             >
               subtitle settings
             </a>
-          </span>
+            {"  "}
           You can only download captions from videos that have them enabled. In
           case the video is private, you cannot download the transcript even if
           it is enabled.
@@ -172,7 +172,7 @@ export default function Page() {
           Of course. You will download the subtitles from our website in a PDF
           format. You can use any PDF editor tool or convert it to another
           format to
-          <span className="mx-2">
+          {"  "}
             <a
               href="https://support.google.com/youtube/answer/2734705?hl=en&sjid=3568816026513773970-AP"
               target="_blank"
@@ -181,7 +181,7 @@ export default function Page() {
             >
               edit the subtitles.
             </a>
-          </span>
+            {"  "}
         </>
       ),
     },

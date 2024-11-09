@@ -74,7 +74,7 @@ export default function Page() {
       header: "SEO Data",
       desc: (
         <>
-          <span className="mx-2">
+           {"  "}
             <a
               href="https://support.google.com/youtube/answer/11914225?hl=en&co=YOUTUBE._YTVideoType%3Dvideo&sjid=3568816026513773970-AP"
               target="_blank"
@@ -83,7 +83,7 @@ export default function Page() {
             >
               YouTube SEO
             </a>
-          </span>
+            {"  "}
           is something that&apos;s not familiar to even the most established
           content creators. Our tool makes this easy by giving you access to the
           meta title and description of any channel. You can refer to the
@@ -104,7 +104,7 @@ export default function Page() {
       header: "Real-Time Analysis",
       desc: (
         <>
-          <span className="mx-2">
+           {"  "}
             <a
               href="https://youtubedownload.org/"
               target="_blank"
@@ -113,7 +113,7 @@ export default function Page() {
             >
               YouTube downloader
             </a>
-          </span>
+            {"  "}
           always fetches the latest information from YouTube. Thus, you can
           always plan content based on current data stats and trends.
         </>
@@ -201,7 +201,7 @@ export default function Page() {
           This way, you can set realistic expectations at each content creation
           stage. You can also compare your channel&apos;s age with others to
           evaluate your progress and when you can reach the
-          <span className="mx-2">
+          {"  "}
             <a
               href="https://support.google.com/youtube/answer/72851?hl=en&co=GENIE.Platform%3DDesktop&sjid=3568816026513773970-AP"
               target="_blank"
@@ -210,7 +210,7 @@ export default function Page() {
             >
               monetization
             </a>
-          </span>
+            {"  "}
         </>
       ),
     },

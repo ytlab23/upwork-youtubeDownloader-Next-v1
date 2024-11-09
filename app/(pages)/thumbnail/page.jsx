@@ -74,7 +74,7 @@ export default function Page() {
       header: "High-Quality Thumbnails",
       desc: (
         <>
-          <span className="mx-2">
+         {" "}
             <a
               href="https://support.google.com/youtube/answer/72431?hl=en"
               target="_blank"
@@ -83,7 +83,7 @@ export default function Page() {
             >
               Thumbnail
             </a>
-          </span>
+          {" "}
           quality is obviously one of the main ranking factors of a YouTube
           video. Thats why we have designed our system to deliver original
           thumbnails from any video in the highest quality available.
@@ -101,7 +101,7 @@ export default function Page() {
           Our platform runs like a charm across all devices. The interface is
           specifically optimized for both desktops and smartphones so that you
           can download resources like
-          <span className="mx-2">
+         {" "}
             <a
               href="https://youtubedownload.org/logo"
               target="_blank"
@@ -110,7 +110,7 @@ export default function Page() {
             >
               YT channel logos
             </a>
-          </span>
+          {" "}
           banners, thumbnails, etc., from anywhere.
         </>
       ),
@@ -208,8 +208,7 @@ export default function Page() {
       desc: (
         <>
           You can collect YouTube thumbnails from all your competitors to
-          analyze what works for your audience.
-          <span className="mx-2">
+          analyze what works for your audience.{" "}
             <a
               href="https://support.google.com/youtube/answer/13861714?hl=en&ref_topic=9257785&sjid=3568816026513773970-AP"
               target="_blank"
@@ -218,7 +217,7 @@ export default function Page() {
             >
               Compare the thumbnails
             </a>
-          </span>
+            {" "}
           of the top-performing videos. Do they have any recurring patterns like
           color or layout? Use these insights to create your own engaging
           thumbnails that draw viewers in.

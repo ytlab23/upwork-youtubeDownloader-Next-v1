@@ -5,7 +5,7 @@ export default function Footer() {
     { name: "Thumbnail", Links: "thumbnail" },
     { name: "Logo", Links: "logo" },
     { name: "Banner", Links: "banner" },
-    { name: "ChannelInformation", Links: "channelinformation" },
+    { name: "Channel Information", Links: "channelinformation" },
     { name: "Captions", Links: "captions" },
   ];
   return (

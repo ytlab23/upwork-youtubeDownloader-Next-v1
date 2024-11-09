@@ -57,13 +57,13 @@ export default function Home() {
     {
       question: "What's the highest quality I can download?",
       answer:
-        "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+        "We always try to give you the best quality, depending on the available quality. For thumbnails, that's usually 1280x720 pixels. Channel banners come in at a crisp 2560x1440 pixels. Logos are typically 800x800 pixels. ",
     },
     {
       question:
         "Can I use the downloaded content for my own videos or projects? ",
       answer:
-        "Nobody knows. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+        "Even though it is possible to download the assets from other channels, you are required to abide by YouTube copyright policies. The downloaded content should be just an inspiration. Proper editing must be done to use it for commercial purposes.",
     },
     {
       question: "Can I use your service on my phone or tablet?",
@@ -77,8 +77,21 @@ export default function Home() {
     },
     {
       question: "Where can I find  more free YouTube tools?",
-      answer:
-        "Our website specializes in tools designed specifically for downloading YouTube content. If you're interested in additional tools, such as those for YouTube SEO and analytics, we recommend exploring these free options.",
+      answer: (
+        <>
+          Our website specializes in tools designed specifically for downloading
+          YouTube content. If you're interested in additional tools, such as
+          those for YouTube SEO and analytics, we recommend exploring
+          <a
+            href="https://www.lenostube.com/en/all-tools/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-red-600 hover:text-red-800"
+          >
+            these free options.
+          </a>
+        </>
+      ),
     },
   ];
   const CtaData = [

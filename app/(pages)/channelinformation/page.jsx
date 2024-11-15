@@ -74,16 +74,16 @@ export default function Page() {
       header: "SEO Data",
       desc: (
         <>
-           {"  "}
-            <a
-              href="https://support.google.com/youtube/answer/11914225?hl=en&co=YOUTUBE._YTVideoType%3Dvideo&sjid=3568816026513773970-AP"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline text-red-600 hover:text-red-800"
-            >
-              YouTube SEO
-            </a>
-            {"  "}
+          {"  "}
+          <a
+            href="https://support.google.com/youtube/answer/11914225?hl=en&co=YOUTUBE._YTVideoType%3Dvideo&sjid=3568816026513773970-AP"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-red-600 hover:text-red-800"
+          >
+            YouTube SEO
+          </a>
+          {"  "}
           is something that&apos;s not familiar to even the most established
           content creators. Our tool makes this easy by giving you access to the
           meta title and description of any channel. You can refer to the
@@ -104,16 +104,16 @@ export default function Page() {
       header: "Real-Time Analysis",
       desc: (
         <>
-           {"  "}
-            <a
-              href="https://youtubedownload.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline text-red-600 hover:text-red-800"
-            >
-              YouTube downloader
-            </a>
-            {"  "}
+          {"  "}
+          <a
+            href="https://youtubedownload.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-red-600 hover:text-red-800"
+          >
+            YouTube downloader
+          </a>
+          {"  "}
           always fetches the latest information from YouTube. Thus, you can
           always plan content based on current data stats and trends.
         </>
@@ -156,13 +156,13 @@ export default function Page() {
   const serviceHeader = [
     {
       header: (
-        <h2 className="mt-0 mb-8 text-2xl font-bold text-gray-700 md:text-4xl">
+        <h2 className="mt-0 mb-8 text-2xl font-bold text-gray-700 text-left md:text-4xl md:mb-6">
           About Our <span className="text-red-600">You</span>Tube Information
           Downloader?
         </h2>
       ),
       desc: (
-        <p className="text-gray-600 pr-3">
+        <p className="text-gray-600 text-sm md:text-base md:pl-5">
           A YouTube Channel Information downloader is a specialized tool that
           gathers and extracts detailed information about a YouTube channel from
           a URL. It is mainly used by content creators to understand their
@@ -202,15 +202,15 @@ export default function Page() {
           stage. You can also compare your channel&apos;s age with others to
           evaluate your progress and when you can reach the
           {"  "}
-            <a
-              href="https://support.google.com/youtube/answer/72851?hl=en&co=GENIE.Platform%3DDesktop&sjid=3568816026513773970-AP"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline text-red-600 hover:text-red-800"
-            >
-              monetization
-            </a>
-            {"  "}
+          <a
+            href="https://support.google.com/youtube/answer/72851?hl=en&co=GENIE.Platform%3DDesktop&sjid=3568816026513773970-AP"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-red-600 hover:text-red-800"
+          >
+            monetization
+          </a>
+          {"  "}
         </>
       ),
     },

@@ -86,10 +86,18 @@ export default function Page() {
       ),
       desc: (
         <p className="mt-4 text-gray-600">
-          Get more done with less effort. Our YouTube Downloader is designed to
-          simplify the way you access video captions. Check out the features
-          that make this tool a must-have for anyone who watches multi-language
-          YouTube videos regularly.
+          Get more done with less effort. Our{" "}
+          <a
+            href="https://youtubedownload.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-red-600 hover:text-red-800"
+          >
+            YouTube Downloader
+          </a>{" "}
+          is designed to simplify the way you access video captions. Check out
+          the features that make this tool a must-have for anyone who watches
+          multi-language YouTube videos regularly.
         </p>
       ),
       imgLink: "./Thumbnail.png",
@@ -122,17 +130,17 @@ export default function Page() {
       question: "Can I download captions from any YouTube video?",
       answer: (
         <>
-          Can I download captions from any YouTube video? No, it depends on the
+          No, it depends on the
           {"  "}
-            <a
-              href="https://support.google.com/youtube/answer/100078?hl=en&sjid=3568816026513773970-AP"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline text-red-600 hover:text-red-800"
-            >
-              subtitle settings
-            </a>
-            {"  "}
+          <a
+            href="https://support.google.com/youtube/answer/100078?hl=en&sjid=3568816026513773970-AP"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-red-600 hover:text-red-800"
+          >
+            subtitle settings
+          </a>
+          {"  "}
           You can only download captions from videos that have them enabled. In
           case the video is private, you cannot download the transcript even if
           it is enabled.
@@ -144,46 +152,31 @@ export default function Page() {
       answer:
         "Basically, auto-generated captions rely on speech recognition technology. Its accuracy depends on factors like audio quality, speaker accents, background noise, etc. It is better to review them before using.",
     },
+
     {
       question: "Can I edit the downloaded caption files?",
-      answer: (
-        <>
-          No, it depends on the
-          {"  "}
-            <a
-              href="https://support.google.com/youtube/answer/100078?hl=en&sjid=3568816026513773970-AP"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline text-red-600 hover:text-red-800"
-            >
-              subtitle settings
-            </a>
-            {"  "}
-          You can only download captions from videos that have them enabled. In
-          case the video is private, you cannot download the transcript even if
-          it is enabled.
-        </>
-      ),
-    },
-    {
-      question: "Can I download multiple subtitles at once?",
       answer: (
         <>
           Of course. You will download the subtitles from our website in a PDF
           format. You can use any PDF editor tool or convert it to another
           format to
           {"  "}
-            <a
-              href="https://support.google.com/youtube/answer/2734705?hl=en&sjid=3568816026513773970-AP"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline text-red-600 hover:text-red-800"
-            >
-              edit the subtitles.
-            </a>
-            {"  "}
+          <a
+            href="https://support.google.com/youtube/answer/2734705?hl=en&sjid=3568816026513773970-AP"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-red-600 hover:text-red-800"
+          >
+            edit the subtitles.
+          </a>
+          {"  "}
         </>
       ),
+    },
+    {
+      question: "Can I download multiple subtitles at once?",
+      answer:
+        "No, you can download captions from only one video at a single run. However, you can use our tool without any restrictions. That means you can download subtitles for as many videos as you want. ",
     },
   ];
   const CtaData = [
@@ -195,13 +188,13 @@ export default function Page() {
   const serviceHeader = [
     {
       header: (
-        <h2 className="mt-0 mb-8 text-2xl font-bold text-gray-700 md:text-4xl">
+        <h2 className="mt-0 mb-8 text-2xl font-bold text-gray-700 text-left md:text-4xl md:mb-6">
           About Our <span className="text-red-600">You</span>Tube Caption
           Downloader?
         </h2>
       ),
       desc: (
-        <p className="text-gray-600 pr-3">
+        <p className="text-gray-600 text-sm md:text-base md:pl-5">
           A YT caption downloader is an online tool that lets you extract the
           subtitles from any YouTube video. These subtitles can be either
           auto-generated by YouTube or manually added by the video creator. You

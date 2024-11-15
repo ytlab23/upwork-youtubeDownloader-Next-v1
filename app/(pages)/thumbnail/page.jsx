@@ -156,20 +156,20 @@ export default function Page() {
   const serviceHeader = [
     {
       header: (
-        <h2 className="mt-0 mb-8 text-2xl font-bold text-gray-700 md:text-4xl text-right">
-          About Our <span className="text-red-600">You</span>Tube Thumbnail
-          Downloader?
+        <h2 className="mt-0 mb-8 text-2xl font-bold text-gray-700 text-left md:text-4xl md:mb-6">
+          About Our <span className="text-red-600">You</span>Tube Thumbnail Downloader?
         </h2>
       ),
       desc: (
-        <p className="text-gray-600 pr-3">
-          YouTube Thumbnail Downloader is a free online tool designed to help
-          users download thumbnail images from YouTube videos. Just paste the
-          link, and you&apos;re good to go!
+        <p className="text-gray-600 text-sm md:text-base md:pl-5">
+          YouTube Thumbnail Downloader is a free online tool designed to help users
+          download thumbnail images from YouTube videos. Just paste the link, and
+          you&apos;re good to go!
         </p>
       ),
     },
   ];
+  
   const serviceHeader2 = [
     {
       title: (

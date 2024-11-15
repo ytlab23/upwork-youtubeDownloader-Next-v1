@@ -147,13 +147,13 @@ export default function Page() {
   const serviceHeader = [
     {
       header: (
-        <h2 className="mt-0 mb-8 text-2xl font-bold text-gray-700 md:text-4xl">
+        <h2 className="mt-0 mb-8 text-2xl font-bold text-gray-700 text-left md:text-4xl md:mb-6">
           About Our <span className="text-red-600">You</span>Tube Banner
           Downloader?
         </h2>
       ),
       desc: (
-        <p className="text-gray-600 pr-3">
+        <p className="text-gray-600 text-sm md:text-base md:pl-5">
           As the name suggests, YouTube banner downloader is a tool that lets
           you download the banner or cover image of any specific YouTube
           channel. It can save you valuable time and effort in editing manually

@@ -82,15 +82,15 @@ export default function Page() {
           obviously matters. That&apos;s why we have designed the system to
           extract logos at the best available quality as per
           {"  "}
-            <a
-              href="https://support.google.com/youtube/answer/1722171"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline text-red-600 hover:text-red-800"
-            >
-              YouTube guidelines.
-            </a>
-            {"  "}
+          <a
+            href="https://support.google.com/youtube/answer/1722171"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-red-600 hover:text-red-800"
+          >
+            YouTube guidelines.
+          </a>
+          {"  "}
           You don&apos;t need to run behind any third-party tools to refine the
           image quality.
         </>
@@ -111,26 +111,25 @@ export default function Page() {
           No matter what type of logo you need, you can use our tool. We can
           extract resources like
           {"  "}
-            <a
-              href="https://youtubedownload.org/thumbnail"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline text-red-600 hover:text-red-800"
-            >
-              Thumbnail
-            </a>
-            {"  "}
-          and{" "}
+          <a
+            href="https://youtubedownload.org/banner"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-red-600 hover:text-red-800"
+          >
+            Banner
+          </a>
           {"  "}
-            <a
-              href="https://youtubedownload.org/logo"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline text-red-600 hover:text-red-800"
-            >
-              logos
-            </a>
-            {"  "}
+          and {"  "}
+          <a
+            href="https://youtubedownload.org/logo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-red-600 hover:text-red-800"
+          >
+            logos
+          </a>
+          {"  "}
           from any public channel with just a link.
         </>
       ),
@@ -145,15 +144,15 @@ export default function Page() {
           better to ask for permission if you plan to use them for commercial
           purposes or in any way that results in
           {"  "}
-            <a
-              href="https://www.youtube.com/creators/how-things-work/policies-guidelines/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline text-red-600 hover:text-red-800"
-            >
-              copyright infringement.
-            </a>
-            {"  "}
+          <a
+            href="https://www.youtube.com/creators/how-things-work/policies-guidelines/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-red-600 hover:text-red-800"
+          >
+            copyright infringement.
+          </a>
+          {"  "}
         </>
       ),
     },
@@ -182,13 +181,13 @@ export default function Page() {
   const serviceHeader = [
     {
       header: (
-        <h2 className="mt-0 mb-8 text-2xl font-bold text-gray-700 md:text-4xl text-right">
+        <h2 className="mt-0 mb-8 text-2xl font-bold text-gray-700 text-left md:text-4xl md:mb-6">
           About Our<span className="text-red-600">You</span>Tube Logo
           Downloader?
         </h2>
       ),
       desc: (
-        <p className="text-gray-600 pr-3">
+        <p className="text-gray-600 text-sm md:text-base md:pl-5">
           A YouTube Logo Downloader is an online tool that lets you easily
           download the logo of any YouTube channel. You can customize them to
           create your own channel logo without breaking any copyright laws.

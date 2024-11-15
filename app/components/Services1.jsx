@@ -20,9 +20,9 @@ export default function Services({ header, data, header2 }) {
               ></path>
             </svg>
             {header.map((item, index) => (
-              <div key={index} className="flex flex-row-reverse mt-8">
-                {item.header}
-                {item.desc}
+              <div key={index} className="flex flex-col md:flex-row mt-8 ">
+                <div className="flex-1">{item.header}</div>
+                <div className="flex-1">{item.desc}</div>
               </div>
             ))}
           </div>

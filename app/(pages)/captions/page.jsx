@@ -293,7 +293,7 @@ export default function Page() {
         <div className="px-6 py-10 sm:py-12 md:py-16 text-center">
           <div className="max-w-lg mx-auto">
             <h1 className="text-3xl font-semibold text-gray-800 lg:text-4xl">
-              <span className="text-red-600">You</span>Tube Asset Downloader
+              <span className="text-red-600">You</span>Tube Captions Downloader
             </h1>
 
             <p className="mt-6 text-gray-500">
@@ -319,8 +319,8 @@ export default function Page() {
                 </button>
               </form>
             </div>
-            <TextinHero data={HeroText} />
             {error && <p className="mt-4 text-red-500">{error}</p>}
+            <TextinHero data={HeroText} />
 
             {assets && (
               <div className="mt-8 text-left">

@@ -304,9 +304,10 @@ export default function Page() {
                 </button>
               </form>
             </div>
+            {error && <p className="mt-4 text-red-500">{error}</p>}
             <TextinHero data={HeroText} />
 
-            {error && <p className="mt-4 text-red-500">{error}</p>}
+        
 
             {assets && (
               <div className="mt-8 text-left">

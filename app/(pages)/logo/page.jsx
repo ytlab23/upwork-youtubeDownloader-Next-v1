@@ -34,7 +34,7 @@ export default function Page() {
     axios
       .post(
         "https://upwork-youtube-downloader-nodejs-v1.vercel.app/api/download-assets",
-        { url, type: "logo", content: "logo" },
+        { url, type: "image", content: "logo" },
         { responseType: "blob" }
       )
       .then((response) => {
@@ -310,8 +310,10 @@ export default function Page() {
                 </button>
               </form>
             </div>
-            <TextinHero data={HeroText} />
             {error && <p className="mt-4 text-red-500">{error}</p>}
+
+            <TextinHero data={HeroText} />
+           
 
             {assets && assets.logo && (
               <div className="mt-8 text-left">

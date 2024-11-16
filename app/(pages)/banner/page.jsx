@@ -271,7 +271,7 @@ export default function Page() {
         <div className="px-6 py-10 sm:py-12 md:py-16 text-center">
           <div className="max-w-lg mx-auto">
             <h1 className="text-3xl font-semibold text-gray-800 lg:text-4xl">
-              <span className="text-red-600">You</span>Tube Asset Downloader
+              <span className="text-red-600">You</span>Tube Banner Downloader
             </h1>
 
             <p className="mt-6 text-gray-500">
@@ -297,8 +297,8 @@ export default function Page() {
                 </button>
               </form>
             </div>
-            <TextinHero data={HeroText} />
             {error && <p className="mt-4 text-red-500">{error}</p>}
+            <TextinHero data={HeroText} />
 
             {assets && (
               <div className="mt-8 text-left">
@@ -307,13 +307,13 @@ export default function Page() {
                 </h2>
                 <div className="relative">
                   <img
-                    src={assets.channelArt}
+                    src={assets.banner}
                     alt="Channel Art"
                     className="mt-2 rounded-lg"
                   />
                   <button
                     onClick={() =>
-                      handleDownloadImage(assets.channelArt, "channel-art.jpg")
+                      handleDownloadImage(assets.banner, "channel-banner.jpg")
                     }
                     className="absolute bottom-2 right-2 px-4 py-2 text-white bg-purple-500 rounded-lg hover:bg-purple-400 focus:outline-none"
                   >

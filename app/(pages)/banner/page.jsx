@@ -23,7 +23,25 @@ export default function Page() {
       setAssets(response.data);
       setError("");
     } catch (err) {
-      setError("Error fetching data");
+      console.error("Error fetching assets:", err);
+
+      if (err.response) {
+        // Server responded with an error status
+        setError(
+          err.response.data.error ||
+            "A server error occurred. Please try again later."
+        );
+      } else if (err.request) {
+        // Request was made but no response received
+        setError(
+          "No response received from the server. Please check your internet connection and try again."
+        );
+      } else {
+        // Other unexpected errors
+        setError(
+          "An unexpected error occurred. Please ensure the URL is correct and try again."
+        );
+      }
     }
   };
 

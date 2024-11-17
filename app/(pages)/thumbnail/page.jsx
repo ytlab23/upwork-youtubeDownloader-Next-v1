@@ -24,7 +24,24 @@ export default function Page() {
       setAssets(response.data);
       setError("");
     } catch (err) {
-      setError("Error fetching data");
+      console.error("Error fetching assets:", err);
+
+      // Handle errors based on the type
+      if (err.response) {
+        // Server responded with an error status
+        setError(
+          err.response.data.error ||
+            "Error fetching data. The server returned an unexpected response. Please try again later."
+        );
+      } else if (err.request) {
+        // Request was made but no response received
+        setError(
+          "Error fetching data. No response received from the server. Please check your internet connection and try again."
+        );
+      } else {
+        // Other unexpected errors
+        setError("Error fetching data. Please check the URL and try again.");
+      }
     }
   };
 
@@ -74,16 +91,15 @@ export default function Page() {
       header: "High-Quality Thumbnails",
       desc: (
         <>
-         {" "}
-            <a
-              href="https://support.google.com/youtube/answer/72431?hl=en"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline text-red-600 hover:text-red-800"
-            >
-              Thumbnail
-            </a>
           {" "}
+          <a
+            href="https://support.google.com/youtube/answer/72431?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-red-600 hover:text-red-800"
+          >
+            Thumbnail
+          </a>{" "}
           quality is obviously one of the main ranking factors of a YouTube
           video. Thats why we have designed our system to deliver original
           thumbnails from any video in the highest quality available.
@@ -100,17 +116,15 @@ export default function Page() {
         <>
           Our platform runs like a charm across all devices. The interface is
           specifically optimized for both desktops and smartphones so that you
-          can download resources like
-         {" "}
-            <a
-              href="https://youtubedownload.org/logo"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline text-red-600 hover:text-red-800"
-            >
-              YT channel logos
-            </a>
-          {" "}
+          can download resources like{" "}
+          <a
+            href="https://youtubedownload.org/logo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-red-600 hover:text-red-800"
+          >
+            YT channel logos
+          </a>{" "}
           banners, thumbnails, etc., from anywhere.
         </>
       ),
@@ -157,19 +171,20 @@ export default function Page() {
     {
       header: (
         <h2 className="mt-0 mb-8 text-2xl font-bold text-gray-700 text-left md:text-4xl md:mb-6">
-          About Our <span className="text-red-600">You</span>Tube Thumbnail Downloader?
+          About Our <span className="text-red-600">You</span>Tube Thumbnail
+          Downloader?
         </h2>
       ),
       desc: (
         <p className="text-gray-600 text-sm md:text-base md:pl-5">
-          YouTube Thumbnail Downloader is a free online tool designed to help users
-          download thumbnail images from YouTube videos. Just paste the link, and
-          you&apos;re good to go!
+          YouTube Thumbnail Downloader is a free online tool designed to help
+          users download thumbnail images from YouTube videos. Just paste the
+          link, and you&apos;re good to go!
         </p>
       ),
     },
   ];
-  
+
   const serviceHeader2 = [
     {
       title: (
@@ -209,15 +224,14 @@ export default function Page() {
         <>
           You can collect YouTube thumbnails from all your competitors to
           analyze what works for your audience.{" "}
-            <a
-              href="https://support.google.com/youtube/answer/13861714?hl=en&ref_topic=9257785&sjid=3568816026513773970-AP"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline text-red-600 hover:text-red-800"
-            >
-              Compare the thumbnails
-            </a>
-            {" "}
+          <a
+            href="https://support.google.com/youtube/answer/13861714?hl=en&ref_topic=9257785&sjid=3568816026513773970-AP"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-red-600 hover:text-red-800"
+          >
+            Compare the thumbnails
+          </a>{" "}
           of the top-performing videos. Do they have any recurring patterns like
           color or layout? Use these insights to create your own engaging
           thumbnails that draw viewers in.
@@ -306,8 +320,6 @@ export default function Page() {
             </div>
             {error && <p className="mt-4 text-red-500">{error}</p>}
             <TextinHero data={HeroText} />
-
-        
 
             {assets && (
               <div className="mt-8 text-left">

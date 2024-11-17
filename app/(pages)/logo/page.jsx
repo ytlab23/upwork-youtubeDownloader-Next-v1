@@ -24,8 +24,25 @@ export default function Page() {
       setAssets(response.data);
       setError("");
     } catch (err) {
-      console.error(err);
-      setError("Error fetching data. Please ensure the URL is correct.");
+      console.error("Error fetching assets:", err);
+
+      if (err.response) {
+        // Server responded with an error status
+        setError(
+          err.response.data.error ||
+            "A server error occurred. Please try again later."
+        );
+      } else if (err.request) {
+        // Request was made but no response received
+        setError(
+          "No response received from the server. Please check your internet connection and try again."
+        );
+      } else {
+        // Other unexpected errors
+        setError(
+          "An unexpected error occurred. Please ensure the URL is correct and try again."
+        );
+      }
     }
   };
 
@@ -313,7 +330,6 @@ export default function Page() {
             {error && <p className="mt-4 text-red-500">{error}</p>}
 
             <TextinHero data={HeroText} />
-           
 
             {assets && assets.logo && (
               <div className="mt-8 text-left">

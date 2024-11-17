@@ -27,9 +27,20 @@ export default function Page() {
       setTranslatedTranscript(null); // Reset translated transcript when fetching new data
     } catch (err) {
       console.error("Error fetching assets:", err);
-      setError("Error fetching data. Please check the URL and try again.");
+  
+      if (err.response) {
+        // Server responded with a status outside 2xx
+        setError(err.response.data.error || "An error occurred on the server.");
+      } else if (err.request) {
+        // Request was made, but no response received
+        setError("No response received. Please check your connection and try again.");
+      } else {
+        // Something else went wrong
+        setError("An unexpected error occurred. Please try again.");
+      }
     }
   };
+  
 
   const handleTranslate = async () => {
     try {

@@ -23,7 +23,26 @@ export default function Page() {
       setAssets(response.data);
       setError("");
     } catch (err) {
-      setError("Error fetching data. Please check the URL and try again.");
+      console.error("Error fetching assets:", err);
+
+      // Enhanced error handling
+      if (err.response) {
+        // Handle server errors with status code
+        setError(
+          err.response.data.error ||
+            `Server error (status: ${err.response.status}). Please try again.`
+        );
+      } else if (err.request) {
+        // Handle network errors or no response from server
+        setError(
+          "No response from the server. Please check your internet connection and try again."
+        );
+      } else {
+        // Handle unexpected errors
+        setError(
+          "An unexpected error occurred. Please ensure the URL is correct and try again."
+        );
+      }
     }
   };
 
@@ -309,7 +328,6 @@ export default function Page() {
             </div>
             {error && <p className="mt-4 text-red-500">{error}</p>}
             <TextinHero data={HeroText} />
-          
 
             {assets && (
               <div className="mt-8 text-left">

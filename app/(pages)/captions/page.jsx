@@ -13,7 +13,6 @@ export default function Page() {
   const [url, setUrl] = useState("");
   const [assets, setAssets] = useState(null);
   const [error, setError] = useState("");
-  const [language, setLanguage] = useState("en");
   const [translatedTranscript, setTranslatedTranscript] = useState(null);
 
   const handleFetchAssets = async () => {
@@ -27,42 +26,26 @@ export default function Page() {
       setTranslatedTranscript(null); // Reset translated transcript when fetching new data
     } catch (err) {
       console.error("Error fetching assets:", err);
-  
+
       if (err.response) {
         // Server responded with a status outside 2xx
         setError(err.response.data.error || "An error occurred on the server.");
       } else if (err.request) {
         // Request was made, but no response received
-        setError("No response received. Please check your connection and try again.");
+        setError(
+          "No response received. Please check your connection and try again."
+        );
       } else {
         // Something else went wrong
         setError("An unexpected error occurred. Please try again.");
       }
     }
   };
-  
-
-  const handleTranslate = async () => {
-    try {
-      const response = await axios.post(
-        "https://upwork-youtube-downloader-nodejs-v1.vercel.app/api/translate",
-        {
-          transcript: assets.transcript,
-          language,
-        }
-      );
-      setTranslatedTranscript(response.data.translatedText);
-      setError("");
-    } catch (err) {
-      console.error("Error translating transcript:", err);
-      setError("Error translating transcript.");
-    }
-  };
 
   const handleDownloadPDF = async () => {
     try {
       const response = await axios.post(
-        "https://upwork-yoububee-downolader-nodejs-v1.vercel.app/api/download-assets",
+        "https://upwork-youtubee-downolader-nodejs-v1.vercel.app/api/download-assets",
         {
           url,
           type: "pdf",
@@ -341,42 +324,6 @@ export default function Page() {
                 <pre className="mt-2 bg-gray-100 p-4 rounded-lg text-sm text-gray-700 overflow-x-auto">
                   {translatedTranscript || assets.transcript}
                 </pre>
-
-                {/* <div className="mt-4">
-                  <label className="block text-gray-700">
-                    Select Language:
-                  </label>
-                  <select
-                    value={language}
-                    onChange={(e) => setLanguage(e.target.value)}
-                    className="mt-2 p-2 border rounded-lg"
-                  >
-                    <option value="en">English</option>
-                    <option value="es">Spanish</option>
-                    <option value="fr">French</option>
-                    <option value="de">German</option>
-                    <option value="ar">Arabic</option>
-                    <option value="zh">Chinese</option>
-                  </select>
-                  <button
-                    type="button"
-                    onClick={handleTranslate}
-                    className="ml-4 mt-2 px-4 py-2 text-white bg-green-500 rounded-lg hover:bg-green-400 focus:outline-none"
-                  >
-                    Translate
-                  </button>
-                </div> */}
-
-                {translatedTranscript && (
-                  <div className="mt-8 text-left">
-                    <h2 className="text-2xl font-semibold text-gray-800 mt-6">
-                      Translated Transcript ({language.toUpperCase()})
-                    </h2>
-                    <pre className="mt-2 bg-gray-100 p-4 rounded-lg text-sm text-gray-700 overflow-x-auto">
-                      {translatedTranscript}
-                    </pre>
-                  </div>
-                )}
 
                 {assets.transcript && (
                   <button

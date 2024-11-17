@@ -48,7 +48,7 @@ export default function Page() {
   const handleDownload = async (type) => {
     try {
       const response = await axios.post(
-        "https://upwork-yoububee-downolader-nodejs-v1.vercel.app/api/download-assets",
+        "https://upwork-youtubee-downolader-nodejs-v1.vercel.app/api/download-assets",
         { url, type: "image", content: "thumbnail" },
         { responseType: "blob" }
       );

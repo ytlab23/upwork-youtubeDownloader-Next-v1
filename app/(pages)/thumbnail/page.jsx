@@ -18,7 +18,7 @@ export default function Page() {
   const handleFetchAssets = async () => {
     try {
       const response = await axios.post(
-        "https://upwork-yoububee-downolader-nodejs-v1.vercel.app/api/get-assets",
+        "https://upwork-youtubee-downolader-nodejs-v1.vercel.app/api/get-assets",
         { url }
       );
       setAssets(response.data);

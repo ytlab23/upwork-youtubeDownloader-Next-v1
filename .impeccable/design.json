@@ -1,0 +1,495 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-25T00:00:00Z",
+  "title": "Design System: YouTubeDownload",
+  "extensions": {
+    "colorMeta": {
+      "bay-bg": {
+        "role": "neutral",
+        "displayName": "Bay Charcoal",
+        "canonical": "oklch(18.5% 0.005 265)",
+        "tonalRamp": [
+          "oklch(15% 0.003 265)",
+          "oklch(25% 0.005 265)",
+          "oklch(35% 0.005 265)",
+          "oklch(48% 0.005 265)",
+          "oklch(60% 0.005 265)",
+          "oklch(72% 0.005 265)",
+          "oklch(84% 0.005 265)",
+          "oklch(95% 0.003 265)"
+        ]
+      },
+      "bay-panel": {
+        "role": "neutral",
+        "displayName": "Panel Charcoal",
+        "canonical": "oklch(21% 0.006 265)",
+        "tonalRamp": [
+          "oklch(15% 0.003 265)",
+          "oklch(25% 0.006 265)",
+          "oklch(35% 0.006 265)",
+          "oklch(48% 0.006 265)",
+          "oklch(60% 0.006 265)",
+          "oklch(72% 0.006 265)",
+          "oklch(84% 0.006 265)",
+          "oklch(95% 0.003 265)"
+        ]
+      },
+      "bay-raised": {
+        "role": "neutral",
+        "displayName": "Raised Charcoal",
+        "canonical": "oklch(25% 0.008 265)",
+        "tonalRamp": [
+          "oklch(15% 0.004 265)",
+          "oklch(25% 0.008 265)",
+          "oklch(35% 0.008 265)",
+          "oklch(48% 0.008 265)",
+          "oklch(60% 0.008 265)",
+          "oklch(72% 0.008 265)",
+          "oklch(84% 0.008 265)",
+          "oklch(95% 0.004 265)"
+        ]
+      },
+      "bay-well": {
+        "role": "neutral",
+        "displayName": "Monitor Well",
+        "canonical": "oklch(14% 0.004 265)",
+        "tonalRamp": [
+          "oklch(15% 0.002 265)",
+          "oklch(25% 0.004 265)",
+          "oklch(35% 0.004 265)",
+          "oklch(48% 0.004 265)",
+          "oklch(60% 0.004 265)",
+          "oklch(72% 0.004 265)",
+          "oklch(84% 0.004 265)",
+          "oklch(95% 0.002 265)"
+        ]
+      },
+      "bay-line": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "oklch(31% 0.01 265)",
+        "tonalRamp": [
+          "oklch(15% 0.005 265)",
+          "oklch(25% 0.01 265)",
+          "oklch(35% 0.01 265)",
+          "oklch(48% 0.01 265)",
+          "oklch(60% 0.01 265)",
+          "oklch(72% 0.01 265)",
+          "oklch(84% 0.01 265)",
+          "oklch(95% 0.005 265)"
+        ]
+      },
+      "bay-line-strong": {
+        "role": "neutral",
+        "displayName": "Strong Hairline",
+        "canonical": "oklch(39% 0.014 265)",
+        "tonalRamp": [
+          "oklch(15% 0.007 265)",
+          "oklch(25% 0.014 265)",
+          "oklch(35% 0.014 265)",
+          "oklch(48% 0.014 265)",
+          "oklch(60% 0.014 265)",
+          "oklch(72% 0.014 265)",
+          "oklch(84% 0.014 265)",
+          "oklch(95% 0.007 265)"
+        ]
+      },
+      "bay-text": {
+        "role": "neutral",
+        "displayName": "Warm Off-White",
+        "canonical": "oklch(93.5% 0.007 85)",
+        "tonalRamp": [
+          "oklch(15% 0.004 85)",
+          "oklch(25% 0.007 85)",
+          "oklch(35% 0.007 85)",
+          "oklch(48% 0.007 85)",
+          "oklch(60% 0.007 85)",
+          "oklch(72% 0.007 85)",
+          "oklch(84% 0.007 85)",
+          "oklch(95% 0.004 85)"
+        ]
+      },
+      "bay-muted": {
+        "role": "neutral",
+        "displayName": "Muted Grey",
+        "canonical": "oklch(76% 0.008 265)",
+        "tonalRamp": [
+          "oklch(15% 0.004 265)",
+          "oklch(25% 0.008 265)",
+          "oklch(35% 0.008 265)",
+          "oklch(48% 0.008 265)",
+          "oklch(60% 0.008 265)",
+          "oklch(72% 0.008 265)",
+          "oklch(84% 0.008 265)",
+          "oklch(95% 0.004 265)"
+        ]
+      },
+      "bay-faint": {
+        "role": "neutral",
+        "displayName": "Faint Grey",
+        "canonical": "oklch(66% 0.01 265)",
+        "tonalRamp": [
+          "oklch(15% 0.005 265)",
+          "oklch(25% 0.01 265)",
+          "oklch(35% 0.01 265)",
+          "oklch(48% 0.01 265)",
+          "oklch(60% 0.01 265)",
+          "oklch(72% 0.01 265)",
+          "oklch(84% 0.01 265)",
+          "oklch(95% 0.005 265)"
+        ]
+      },
+      "bay-playhead": {
+        "role": "primary",
+        "displayName": "Playhead Vermilion",
+        "canonical": "oklch(68% 0.2 35)",
+        "tonalRamp": [
+          "oklch(15% 0.1 35)",
+          "oklch(25% 0.2 35)",
+          "oklch(35% 0.2 35)",
+          "oklch(48% 0.2 35)",
+          "oklch(60% 0.2 35)",
+          "oklch(72% 0.2 35)",
+          "oklch(84% 0.2 35)",
+          "oklch(95% 0.1 35)"
+        ]
+      },
+      "bay-playhead-hover": {
+        "role": "primary",
+        "displayName": "Hot Vermilion",
+        "canonical": "oklch(73% 0.17 35)",
+        "tonalRamp": [
+          "oklch(15% 0.085 35)",
+          "oklch(25% 0.17 35)",
+          "oklch(35% 0.17 35)",
+          "oklch(48% 0.17 35)",
+          "oklch(60% 0.17 35)",
+          "oklch(72% 0.17 35)",
+          "oklch(84% 0.17 35)",
+          "oklch(95% 0.085 35)"
+        ]
+      },
+      "bay-ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "oklch(18.5% 0.005 265)",
+        "tonalRamp": [
+          "oklch(15% 0.003 265)",
+          "oklch(25% 0.005 265)",
+          "oklch(35% 0.005 265)",
+          "oklch(48% 0.005 265)",
+          "oklch(60% 0.005 265)",
+          "oklch(72% 0.005 265)",
+          "oklch(84% 0.005 265)",
+          "oklch(95% 0.003 265)"
+        ]
+      },
+      "bay-danger": {
+        "role": "error",
+        "displayName": "Soft Red",
+        "canonical": "oklch(76% 0.14 28)",
+        "tonalRamp": [
+          "oklch(15% 0.07 28)",
+          "oklch(25% 0.14 28)",
+          "oklch(35% 0.14 28)",
+          "oklch(48% 0.14 28)",
+          "oklch(60% 0.14 28)",
+          "oklch(72% 0.14 28)",
+          "oklch(84% 0.14 28)",
+          "oklch(95% 0.07 28)"
+        ]
+      },
+      "label-thumbnail": {
+        "role": "secondary",
+        "displayName": "Thumbnail Blue",
+        "canonical": "oklch(67% 0.14 265)",
+        "tonalRamp": [
+          "oklch(15% 0.07 265)",
+          "oklch(25% 0.14 265)",
+          "oklch(35% 0.14 265)",
+          "oklch(48% 0.14 265)",
+          "oklch(60% 0.14 265)",
+          "oklch(72% 0.14 265)",
+          "oklch(84% 0.14 265)",
+          "oklch(95% 0.07 265)"
+        ]
+      },
+      "label-captions": {
+        "role": "secondary",
+        "displayName": "Caption Amber",
+        "canonical": "oklch(80% 0.14 85)",
+        "tonalRamp": [
+          "oklch(15% 0.07 85)",
+          "oklch(25% 0.14 85)",
+          "oklch(35% 0.14 85)",
+          "oklch(48% 0.14 85)",
+          "oklch(60% 0.14 85)",
+          "oklch(72% 0.14 85)",
+          "oklch(84% 0.14 85)",
+          "oklch(95% 0.07 85)"
+        ]
+      },
+      "label-logo": {
+        "role": "secondary",
+        "displayName": "Logo Violet",
+        "canonical": "oklch(68% 0.15 295)",
+        "tonalRamp": [
+          "oklch(15% 0.075 295)",
+          "oklch(25% 0.15 295)",
+          "oklch(35% 0.15 295)",
+          "oklch(48% 0.15 295)",
+          "oklch(60% 0.15 295)",
+          "oklch(72% 0.15 295)",
+          "oklch(84% 0.15 295)",
+          "oklch(95% 0.075 295)"
+        ]
+      },
+      "label-banner": {
+        "role": "secondary",
+        "displayName": "Banner Teal",
+        "canonical": "oklch(74% 0.11 185)",
+        "tonalRamp": [
+          "oklch(15% 0.055 185)",
+          "oklch(25% 0.11 185)",
+          "oklch(35% 0.11 185)",
+          "oklch(48% 0.11 185)",
+          "oklch(60% 0.11 185)",
+          "oklch(72% 0.11 185)",
+          "oklch(84% 0.11 185)",
+          "oklch(95% 0.055 185)"
+        ]
+      },
+      "label-info": {
+        "role": "secondary",
+        "displayName": "Info Green",
+        "canonical": "oklch(74% 0.15 148)",
+        "tonalRamp": [
+          "oklch(15% 0.075 148)",
+          "oklch(25% 0.15 148)",
+          "oklch(35% 0.15 148)",
+          "oklch(48% 0.15 148)",
+          "oklch(60% 0.15 148)",
+          "oklch(72% 0.15 148)",
+          "oklch(84% 0.15 148)",
+          "oklch(95% 0.075 148)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Home page h1 only; wide Archivo."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Each tool's h1 inside the workspace; the 404 heading."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Long-form section h2s and the closing panel heading."
+      },
+      "subtitle": {
+        "displayName": "Subtitle",
+        "purpose": "List item, step, FAQ and tool-index headings."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Long-form prose, max 68ch, Muted Grey."
+      },
+      "body-ui-lg": {
+        "displayName": "Body UI Large",
+        "purpose": "The tool prompt under each workspace h1 and form fields (16px)."
+      },
+      "body-ui": {
+        "displayName": "Body UI",
+        "purpose": "Workspace copy, guidance, viewer messages (14-16px)."
+      },
+      "control": {
+        "displayName": "Control",
+        "purpose": "Tabs, secondary buttons, viewer guidance and status text (14px)."
+      },
+      "readout": {
+        "displayName": "Readout",
+        "purpose": "Viewer bar label and meta, footer small print (13px)."
+      },
+      "micro": {
+        "displayName": "Micro",
+        "purpose": "JSON field names in the channel-info readout (11-13px mono)."
+      },
+      "ruler": {
+        "displayName": "Ruler",
+        "purpose": "Timeline ruler timecode labels (10px mono, tabular)."
+      },
+      "label": {
+        "displayName": "Panel Label",
+        "purpose": "Uppercase panel headers (Timeline bar) and clip tool names."
+      },
+      "mono": {
+        "displayName": "Machine Voice",
+        "purpose": "Timecode, ruler labels, line numbers, clip and channel IDs, JSON field names. Nothing else."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "bay-scan",
+        "value": "1.15s cubic-bezier(0.45, 0, 0.55, 1) infinite alternate",
+        "purpose": "1px vermilion scan line sweeping the frame while fetching."
+      },
+      {
+        "name": "bay-clip-in",
+        "value": "320ms cubic-bezier(0.16, 1, 0.3, 1) both",
+        "purpose": "Newest timeline clip wipes in left to right (clip-path)."
+      },
+      {
+        "name": "bay-cut",
+        "value": "140ms steps(2, end) both",
+        "purpose": "Result cuts into the viewer as a hard two-step opacity cut."
+      },
+      {
+        "name": "state-transition",
+        "value": "150ms (colors, filter)",
+        "purpose": "Hover and focus colour changes on controls, tabs and clips."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce",
+        "purpose": "Scan, clip-in and cut animations and smooth scrolling are switched off."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      },
+      {
+        "name": "xl",
+        "value": "1280px"
+      },
+      {
+        "name": "workspace-max",
+        "value": "90rem"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one live vermilion action in the workspace: import before a result, Download after.",
+      "html": "<button class=\"ds-btn-primary\"><svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" width=\"20\" height=\"20\" aria-hidden=\"true\"><path d=\"M10 3v9\"/><path d=\"m6.5 8.5 3.5 3.5 3.5-3.5\"/><path d=\"M3.5 13.5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2\"/></svg>Get thumbnail</button>",
+      "css": ".ds-btn-primary { font-family: var(--font-archivo), system-ui, sans-serif; display: inline-flex; align-items: center; gap: 8px; height: 48px; padding: 0 20px; border: 1px solid var(--bay-playhead); border-radius: 4px; background: var(--bay-playhead); color: var(--bay-ink); font-size: 15px; font-weight: 700; cursor: pointer; transition: background-color 150ms, border-color 150ms; } .ds-btn-primary:hover { background: var(--bay-playhead-hover); border-color: var(--bay-playhead-hover); } .ds-btn-primary:focus-visible { outline: 2px solid var(--bay-playhead); outline-offset: 2px; }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "The import button once a result exists; hands the vermilion to Download.",
+      "html": "<button class=\"ds-btn-outline\">Get thumbnail</button>",
+      "css": ".ds-btn-outline { font-family: var(--font-archivo), system-ui, sans-serif; display: inline-flex; align-items: center; height: 48px; padding: 0 20px; border: 1px solid var(--bay-line-strong); border-radius: 4px; background: transparent; color: var(--bay-text); font-size: 15px; font-weight: 700; cursor: pointer; transition: background-color 150ms, border-color 150ms; } .ds-btn-outline:hover { background: var(--bay-raised); border-color: var(--bay-faint); } .ds-btn-outline:focus-visible { outline: 2px solid var(--bay-playhead); outline-offset: 2px; }"
+    },
+    {
+      "name": "Link Input",
+      "kind": "input",
+      "refersTo": "input-link",
+      "description": "The import bar's YouTube link field, recessed into the monitor well.",
+      "html": "<input class=\"ds-input-link\" type=\"url\" placeholder=\"Enter YouTube video URL\" aria-label=\"YouTube link\">",
+      "css": ".ds-input-link { font-family: var(--font-archivo), system-ui, sans-serif; height: 48px; width: 320px; padding: 0 14px; border: 1px solid var(--bay-line-strong); border-radius: 4px; background: var(--bay-well); color: var(--bay-text); font-size: 15px; caret-color: var(--bay-playhead); transition: border-color 150ms; } .ds-input-link::placeholder { color: var(--bay-faint); } .ds-input-link:hover { border-color: var(--bay-faint); } .ds-input-link:focus { outline: none; border-color: var(--bay-playhead); }"
+    },
+    {
+      "name": "Workspace Tabs",
+      "kind": "nav",
+      "refersTo": "nav-tab",
+      "description": "App bar tool tabs with label swatches; the active tab is underlined in its label colour.",
+      "html": "<nav class=\"ds-tabs\"><a class=\"ds-tab ds-tab-active\" href=\"#\"><span class=\"ds-sw\" style=\"background: var(--label-thumbnail)\"></span>Thumbnail<span class=\"ds-ul\" style=\"background: var(--label-thumbnail)\"></span></a><a class=\"ds-tab\" href=\"#\"><span class=\"ds-sw\" style=\"background: var(--label-captions)\"></span>Captions</a><a class=\"ds-tab\" href=\"#\"><span class=\"ds-sw\" style=\"background: var(--label-logo)\"></span>Logo</a></nav>",
+      "css": ".ds-tabs { display: flex; gap: 8px; background: var(--bay-bg); border-bottom: 1px solid var(--bay-line); padding: 0 16px; } .ds-tab { font-family: var(--font-archivo), system-ui, sans-serif; position: relative; display: flex; align-items: center; gap: 8px; height: 56px; padding: 0 12px; font-size: 14px; font-weight: 500; color: var(--bay-muted); text-decoration: none; transition: color 150ms; } .ds-tab:hover, .ds-tab-active { color: var(--bay-text); } .ds-tab:focus-visible { outline: 2px solid var(--bay-playhead); outline-offset: 2px; } .ds-sw { width: 8px; height: 8px; border-radius: 2px; } .ds-ul { position: absolute; left: 12px; right: 12px; bottom: 0; height: 2px; }"
+    },
+    {
+      "name": "Program Viewer",
+      "kind": "custom",
+      "refersTo": "viewer-well",
+      "description": "Viewer bar over the monitor well; the picture frame takes the asset's ratio with hairline corner marks just outside it.",
+      "html": "<div class=\"ds-viewer\"><div class=\"ds-vbar\"><span><i class=\"ds-sw\" style=\"background: var(--label-thumbnail)\"></i><b>Thumbnail</b> <code>dQw4w9WgXcQ</code></span><span class=\"ds-meta\">1280 × 720</span></div><div class=\"ds-well\"><div class=\"ds-frame\"><i class=\"ds-c ds-tl\"></i><i class=\"ds-c ds-tr\"></i><i class=\"ds-c ds-bl\"></i><i class=\"ds-c ds-br\"></i></div></div><div class=\"ds-transport\"><code>00:00:00:00</code></div></div>",
+      "css": ".ds-viewer { font-family: var(--font-archivo), system-ui, sans-serif; width: 520px; border: 1px solid var(--bay-line); border-radius: 6px; overflow: hidden; background: var(--bay-panel); color: var(--bay-text); } .ds-vbar, .ds-transport { display: flex; align-items: center; justify-content: space-between; height: 44px; padding: 0 20px; font-size: 13px; border-bottom: 1px solid var(--bay-line); } .ds-transport { border-bottom: 0; border-top: 1px solid var(--bay-line); } .ds-vbar span { display: flex; align-items: center; gap: 8px; } .ds-sw { display: inline-block; width: 8px; height: 8px; border-radius: 2px; } .ds-vbar code, .ds-transport code { font-family: var(--font-mono), ui-monospace, monospace; color: var(--bay-muted); font-variant-numeric: tabular-nums; } .ds-transport code { color: var(--bay-text); font-size: 15px; } .ds-meta { color: var(--bay-muted); font-variant-numeric: tabular-nums; } .ds-well { background: var(--bay-well); padding: 36px 40px; display: flex; justify-content: center; } .ds-frame { position: relative; width: 100%; aspect-ratio: 16 / 9; background: var(--bay-panel); border-radius: 2px; } .ds-c { position: absolute; width: 16px; height: 16px; border-color: var(--label-thumbnail); border-style: solid; border-width: 0; } .ds-tl { left: -8px; top: -8px; border-left-width: 1px; border-top-width: 1px; } .ds-tr { right: -8px; top: -8px; border-right-width: 1px; border-top-width: 1px; } .ds-bl { left: -8px; bottom: -8px; border-left-width: 1px; border-bottom-width: 1px; } .ds-br { right: -8px; bottom: -8px; border-right-width: 1px; border-bottom-width: 1px; }"
+    },
+    {
+      "name": "Timeline Clip",
+      "kind": "custom",
+      "refersTo": "timeline-clip",
+      "description": "A pulled asset on the timeline track, filled with its tool's label colour, under the vermilion playhead when active.",
+      "html": "<div class=\"ds-track\"><span class=\"ds-v1\"></span><div class=\"ds-cliphold\"><span class=\"ds-playhead\"></span><button class=\"ds-clip\" style=\"background: var(--label-thumbnail)\"><span class=\"ds-poster\"></span><span class=\"ds-ctext\"><b>Thumbnail</b><code>dQw4w9WgXcQ</code></span></button></div></div>",
+      "css": ".ds-track { display: flex; align-items: center; gap: 8px; background: var(--bay-panel); border-top: 1px solid var(--bay-line); padding: 10px 8px 10px 0; } .ds-v1 { width: 48px; text-align: center; font-family: var(--font-mono), ui-monospace, monospace; font-size: 12px; color: var(--bay-faint); border-right: 1px solid var(--bay-line); } .ds-cliphold { position: relative; } .ds-playhead { position: absolute; left: 0; top: -10px; bottom: -10px; width: 2px; background: var(--bay-playhead); z-index: 1; } .ds-clip { font-family: var(--font-archivo), system-ui, sans-serif; display: flex; align-items: stretch; width: 208px; height: 44px; padding: 0; border: 0; border-radius: 3px; overflow: hidden; color: var(--bay-ink); text-align: left; cursor: pointer; outline: 2px solid var(--bay-text); outline-offset: 1px; transition: filter 150ms; } .ds-clip:hover { filter: brightness(1.1); } .ds-clip:focus-visible { outline-color: var(--bay-playhead); } .ds-poster { width: 64px; background: var(--bay-ink); opacity: 0.35; border-right: 1px solid rgba(17,18,20,0.3); } .ds-ctext { display: flex; flex-direction: column; justify-content: center; padding: 0 10px; font-size: 12px; } .ds-ctext b { text-transform: uppercase; letter-spacing: 0.04em; } .ds-ctext code { font-family: var(--font-mono), ui-monospace, monospace; }"
+    },
+    {
+      "name": "Workspace Panel",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "The flat charcoal panel with a hairline border that holds every workspace and the closing call.",
+      "html": "<div class=\"ds-panel\"><h3>Download your favourite thumbnails</h3><p>Flat charcoal, 1px hairline, 6px corners, no shadow.</p></div>",
+      "css": ".ds-panel { font-family: var(--font-archivo), system-ui, sans-serif; max-width: 480px; padding: 28px; border: 1px solid var(--bay-line); border-radius: 6px; background: var(--bay-panel); color: var(--bay-text); } .ds-panel h3 { margin: 0; font-size: 24px; font-weight: 700; font-stretch: 112%; letter-spacing: -0.02em; line-height: 1.1; } .ds-panel p { margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: var(--bay-muted); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Editing Bay",
+    "overview": "Every tool is an editing workspace, not a form on a white card. A visitor imports a link, the asset cuts into the program monitor, and each pull lands as a colour-labelled clip on a session timeline under a vermilion playhead. The world is the non-linear editor (Premiere, Resolve, Final Cut): flat charcoal panels, 1px hairline dividers, a recessed well for the picture, and the editor's own vocabulary (timecode, a ruler, clips, corner marks), with every word taken from the old site's copy.\n\nDensity is that of a working application in the workspace (44-56px bars, 13-15px readouts) and relaxes into a long-form reading column below it. There is one warm accent, the playhead vermilion, and five NLE label colours that identify the tools everywhere they appear: tabs, footer, list markers, viewer tag, clips. Depth comes from tone, never from shadow. The category default this rejects is the centred YouTube-red input pill on white with feature cards.",
+    "keyCharacteristics": [
+      "Flat charcoal panels, separated by 1px hairlines; no shadows.",
+      "One vermilion action at a time in the workspace; vermilion also marks the playhead, focus, caret and selection.",
+      "One label colour per tool, used consistently as the tool's identity.",
+      "Wide Archivo (width axis) for display; mono reserved for timecode, IDs, line numbers and file specs.",
+      "The asset cuts into a corner-marked viewer and lands as a clip on the timeline."
+    ],
+    "rules": [
+      {
+        "name": "The One Playhead Rule",
+        "body": "Exactly one vermilion action is live in the workspace at a time: the import button before a result; once a result exists the viewer bar's Download turns vermilion and the import button drops to an outline.",
+        "section": "colors"
+      },
+      {
+        "name": "The Label Identity Rule",
+        "body": "A tool's label colour is its identity everywhere; never use a label colour for anything that is not that tool, and never as a page background.",
+        "section": "colors"
+      },
+      {
+        "name": "The Machine Voice Rule",
+        "body": "Mono is only for timecode, IDs, line numbers and file specs. Headings, buttons and prose are always Archivo.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Rule",
+        "body": "Every changing number (timecode, status timing, resolution readout) uses tabular numerals so it never jitters.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Bay Rule",
+        "body": "No shadows, glows or decorative gradients. Linear gradients appear only as drawing tools for instrument marks (ruler minor ticks, the caption clip's text strip), never as fills.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep exactly one vermilion action live in the workspace, handing it from import to Download when a result arrives.",
+      "Do mark each tool with its own label colour wherever it appears, and fill its clips with that colour and Ink text.",
+      "Do separate surfaces with 1px hairlines and tonal steps (Well, Bay, Panel, Raised).",
+      "Do frame pictures at the asset's real aspect ratio with corner marks, letterboxed in the Monitor Well.",
+      "Do set display and tool headings in wide Archivo with tight negative tracking.",
+      "Do honour reduced motion: the scan, clip wipe and cut animations switch off and smooth scrolling stops.",
+      "Do use only the old site's wording for every visible string (deletions allowed, no new sentences or labels); illustrations stay wordless."
+    ],
+    "donts": [
+      "Don't use box-shadows, glows or decorative gradient fills.",
+      "Don't set headings, buttons or prose in mono; mono is for timecode, IDs, line numbers and file specs only.",
+      "Don't use a label colour for anything other than its tool, or vermilion for a second competing action.",
+      "Don't round corners past 6px except for assets that are round (logos, avatars) and status dots.",
+      "Don't fall back to the category default: a centred YouTube-red input pill on white with feature cards."
+    ]
+  }
+}

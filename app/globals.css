@@ -2,3 +2,205 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Editing Bay: flat editor panels, hairline dividers, one playhead accent,
+   and an editor label colour per tool. No gradients, glows or shadows. */
+:root {
+  --bay-bg: #111214;
+  --bay-panel: #18191c;
+  --bay-raised: #212328;
+  --bay-well: #0a0b0d;
+  --bay-line: #2c2f35;
+  --bay-line-strong: #41454e;
+  --bay-text: #ece9e3;
+  --bay-muted: #b0b2b8;
+  --bay-faint: #8f9299;
+  --bay-playhead: #ff5b3a;
+  --bay-playhead-hover: #ff7c60;
+  --bay-ink: #111214;
+  --bay-danger: #ff8a7a;
+
+  --label-thumbnail: #6b97f2;
+  --label-captions: #e8b647;
+  --label-logo: #a888f2;
+  --label-banner: #44c1b8;
+  --label-info: #5cc27a;
+
+  color-scheme: dark;
+}
+
+html {
+  background: var(--bay-bg);
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bay-bg);
+  color: var(--bay-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--bay-playhead);
+  color: var(--bay-ink);
+}
+
+input,
+textarea {
+  caret-color: var(--bay-playhead);
+}
+
+:focus-visible {
+  outline: 2px solid var(--bay-playhead);
+  outline-offset: 2px;
+}
+
+* {
+  scrollbar-color: var(--bay-line-strong) transparent;
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--bay-line-strong);
+  border: 3px solid var(--bay-bg);
+  border-radius: 9999px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@layer utilities {
+  .wide {
+    font-stretch: 112%;
+  }
+  .semi-wide {
+    font-stretch: 106%;
+  }
+  .narrow {
+    font-stretch: 88%;
+  }
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Long-form copy under each tool. Headings and paragraphs arrive as plain
+   elements from the page data and take their style from here. */
+.bay-prose h2 {
+  font-size: clamp(1.5rem, 1.1rem + 1.4vw, 2.125rem);
+  line-height: 1.15;
+  font-weight: 700;
+  font-stretch: 108%;
+  letter-spacing: -0.015em;
+  color: var(--bay-text);
+  text-wrap: balance;
+}
+
+.bay-prose p {
+  color: var(--bay-muted);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  max-width: 68ch;
+}
+
+.bay-prose p + p {
+  margin-top: 1rem;
+}
+
+.bay-prose a {
+  color: var(--bay-text);
+  text-decoration: underline;
+  text-decoration-color: var(--bay-playhead);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  transition: color 150ms ease-out;
+}
+
+.bay-prose a:hover {
+  color: var(--bay-playhead-hover);
+}
+
+/* Timeline ruler segment: the major tick is its left border; minor ticks every 1rem along the bottom. */
+.bay-ruler-segment {
+  background-image: repeating-linear-gradient(to right, transparent 0 calc(1rem - 1px), var(--bay-line) calc(1rem - 1px) 1rem);
+  background-size: 100% 40%;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+}
+
+@keyframes bay-scan {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes bay-clip-in {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes bay-cut {
+  from {
+    opacity: 0.35;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bay-scan {
+  animation: bay-scan 1.15s cubic-bezier(0.45, 0, 0.55, 1) infinite alternate;
+}
+
+.bay-clip-in {
+  animation: bay-clip-in 320ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.bay-cut {
+  animation: bay-cut 140ms steps(2, end) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .bay-scan,
+  .bay-clip-in,
+  .bay-cut {
+    animation: none;
+  }
+}
+
+/* The viewer's picture frame takes the asset's own shape (--ratio) and fits
+   inside the program monitor, the way an editor letterboxes a clip. */
+.bay-frame {
+  width: 100%;
+  aspect-ratio: var(--ratio);
+}
+
+@media (min-width: 640px) {
+  .bay-frame {
+    width: min(100cqw, calc(100cqh * var(--ratio)));
+  }
+}
+
+/* Caption clips on the timeline: a strip of text lines instead of a poster. */
+.bay-text-strip {
+  background-image: repeating-linear-gradient(to bottom, transparent 0 5px, rgba(17, 18, 20, 0.55) 5px 7px);
+}

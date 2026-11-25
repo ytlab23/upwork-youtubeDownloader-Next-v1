@@ -1,78 +1,17 @@
 "use client";
-import { useState } from "react";
-import axios from "axios";
 import React from "react";
-import Features1 from "@/app/components/Features1";
-import FAQ1 from "@/app/components/FAQ1";
-import CTA from "@/app/components/CTA";
-import Services from "@/app/components/Services1";
-import Use from "@/app/components/Use";
-import TextinHero from "@/app/components/TextinHero";
+import ToolPage from "@/app/components/bay/ToolPage";
 
 export default function Page() {
-  const [url, setUrl] = useState("");
-  const [assets, setAssets] = useState(null);
-  const [error, setError] = useState("");
-
-  const handleFetchAssets = async () => {
-    try {
-      const response = await axios.post(
-        "/api/get-assets",
-        { url, content: "banner" }
-      );
-      setAssets(response.data);
-      setError("");
-    } catch (err) {
-      console.error("Error fetching assets:", err);
-
-      if (err.response) {
-        // Server responded with an error status
-        setError(
-          err.response.data.error ||
-            "A server error occurred. Please try again later."
-        );
-      } else if (err.request) {
-        // Request was made but no response received
-        setError(
-          "No response received from the server. Please check your internet connection and try again."
-        );
-      } else {
-        // Other unexpected errors
-        setError(
-          "An unexpected error occurred. Please ensure the URL is correct and try again."
-        );
-      }
-    }
-  };
-
-  const handleDownloadImage = async (imageUrl, fileName) => {
-    try {
-      const response = await axios.get(imageUrl, {
-        responseType: "blob",
-      });
-
-      const blob = new Blob([response.data], { type: response.data.type });
-      const link = document.createElement("a");
-      link.href = window.URL.createObjectURL(blob);
-      link.download = fileName;
-      link.style.display = "none";
-      document.body.appendChild(link);
-      link.click();
-      link.remove();
-    } catch (err) {
-      setError("Error downloading image");
-    }
-  };
-
   const FeaturesHeader = [
     {
       title: (
-        <h2 className="text-3xl font-bold sm:text-4xl">
-          Main <span className="text-red-600">Features</span>
+        <h2>
+          Main Features
         </h2>
       ),
       desc: (
-        <p className="mt-4 text-gray-600">
+        <p>
           Check out the main features that make our YouTube banner downloader
           easy and stress-free:
         </p>
@@ -107,7 +46,7 @@ export default function Page() {
             href="https://support.google.com/youtube/answer/2801895?hl=en"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline text-red-600 hover:text-red-800"
+           
           >
             personal information
           </a>
@@ -144,7 +83,7 @@ export default function Page() {
             href="https://support.google.com/youtube/answer/9783148?hl=en"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline text-red-600 hover:text-red-800"
+           
           >
             legal to download
           </a>
@@ -165,13 +104,13 @@ export default function Page() {
   const serviceHeader = [
     {
       header: (
-        <h2 className="mt-0 mb-8 text-2xl font-bold text-gray-700 text-left md:text-4xl md:mb-6">
-          About Our <span className="text-red-600">You</span>Tube Banner
+        <h2>
+          About Our YouTube Banner
           Downloader?
         </h2>
       ),
       desc: (
-        <p className="text-gray-600 text-sm md:text-base md:pl-5">
+        <p>
           As the name suggests, YouTube banner downloader is a tool that lets
           you download the banner or cover image of any specific YouTube
           channel. It can save you valuable time and effort in editing manually
@@ -183,13 +122,13 @@ export default function Page() {
   const serviceHeader2 = [
     {
       title: (
-        <h2 className="text-3xl font-bold sm:text-4xl">
-          Why You Need a Good <span className="text-red-600">You</span>Tube
+        <h2>
+          Why You Need a Good YouTube
           Banner Downloader?
         </h2>
       ),
       desc: (
-        <p className="mt-4 text-gray-600">
+        <p>
           Your YouTube banner is one of the first things people notice when they
           visit your channel. It sets the tone for your content and gives
           viewers an idea of what to expect. Heres why having a great banner is
@@ -214,7 +153,7 @@ export default function Page() {
             href="https://youtubedownload.org/banner"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline text-red-600 hover:text-red-800"
+           
           >
             banners
           </a>
@@ -241,13 +180,13 @@ export default function Page() {
   const UseHeader = [
     {
       title: (
-        <h2 className="my-8 text-2xl font-bold text-blace md:text-4xl">
-          How To Use The <span className="text-red-600">You</span>Tube Banner
+        <h2>
+          How To Use The YouTube Banner
           Downloader?
         </h2>
       ),
       desc: (
-        <p className="text-black">
+        <p>
           Follow these simple steps to get your favorite YouTube banner in no
           time:
         </p>
@@ -271,9 +210,9 @@ export default function Page() {
   ];
   const HeroText = [
     {
-      title: <h2 className="text-2xl font-semibold text-red-600">BANNER</h2>,
+      title: <h2>BANNER</h2>,
       desc: (
-        <p className="mt-4 text-gray-800">
+        <p>
           Let us guess. You&apos;ve found an awesome YouTube channel with a
           stunning banner that caught your eye. But you are wondering how to
           download it without losing quality. Well, thats where our brand-new
@@ -284,81 +223,19 @@ export default function Page() {
     },
   ];
   return (
-    <div className="flex flex-col items-center min-h-screen bg-white">
-      <section className="bg-white rounded-2xl shadow-2xl w-full max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-3xl xl:max-w-4xl mx-auto mt-44 mb-44">
-        <div className="px-6 py-10 sm:py-12 md:py-16 text-center">
-          <div className="max-w-lg mx-auto">
-            <h1 className="text-3xl font-semibold text-gray-800 lg:text-4xl">
-              <span className="text-red-600">You</span>Tube Banner Downloader
-            </h1>
-
-            <p className="mt-6 text-gray-500">
-              Enter the URL of a YouTube video to download{" "}
-              <span className="text-black font-bold">Banner</span>
-            </p>
-
-            <div className="w-full max-w-sm mx-auto mt-6 bg-transparent border rounded-full focus-within:border-blue-400 focus-within:ring focus-within:ring-blue-300 focus-within:ring-opacity-40">
-              <form className="flex flex-col md:flex-row">
-                <input
-                  type="text"
-                  value={url}
-                  onChange={(e) => setUrl(e.target.value)}
-                  placeholder="Enter YouTube video URL"
-                  className="flex-1 h-10 px-4 py-2 m-1 text-gray-700 placeholder-gray-400 bg-transparent border-none appearance-none focus:outline-none focus:placeholder-transparent focus:ring-0"
-                />
-                <button
-                  type="button"
-                  onClick={handleFetchAssets}
-                  className="h-10 px-4 py-2 m-1 text-white transition-colors duration-300 transform bg-red-600 rounded-full hover:bg-red-400 focus:outline-none focus:bg-red-400"
-                >
-                  Banner
-                </button>
-              </form>
-            </div>
-            {error && <p className="mt-4 text-red-500">{error}</p>}
-            <TextinHero data={HeroText} />
-
-            {assets && (
-              <div className="mt-8 text-left">
-                <h2 className="text-2xl font-semibold text-gray-800 mt-6">
-                  Banner
-                </h2>
-                <div className="relative">
-                  <img
-                    src={assets.banner}
-                    alt="Channel Art"
-                    className="mt-2 rounded-lg"
-                  />
-                  <button
-                    onClick={() =>
-                      handleDownloadImage(assets.banner, "channel-banner.jpg")
-                    }
-                    className="absolute bottom-2 right-2 px-4 py-2 text-white bg-purple-500 rounded-lg hover:bg-purple-400 focus:outline-none"
-                  >
-                    Download Banner
-                  </button>
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
-      </section>
-      <div className="container mx-auto px-4 mt-10">
-        {/* Services Section */}
-        <Services
-          header={serviceHeader}
-          data={serviceData}
-          header2={serviceHeader2}
-        />
-        {/* Features Section */}
-        <Features1 header={FeaturesHeader} data={Featuress} />
-        {/* How to Use Section */}
-        <Use header={UseHeader} data={UseData} />
-        {/* CTA Section */}
-        <CTA data={CtaData} />
-        {/* FAQs Section */}
-        <FAQ1 data={FAQ} />
-      </div>
-    </div>
+    <ToolPage
+      toolId="banner"
+      title="YouTube Banner Downloader"
+      intro={HeroText}
+      about={serviceHeader}
+      why={serviceHeader2}
+      whyItems={serviceData}
+      featuresHeader={FeaturesHeader}
+      features={Featuress}
+      useHeader={UseHeader}
+      steps={UseData}
+      cta={CtaData}
+      faq={FAQ}
+    />
   );
 }

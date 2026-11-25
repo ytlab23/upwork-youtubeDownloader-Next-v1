@@ -1,82 +1,17 @@
 "use client";
-import { useState } from "react";
-import axios from "axios";
 import React from "react";
-import Features1 from "@/app/components/Features1";
-import FAQ1 from "@/app/components/FAQ1";
-import CTA from "@/app/components/CTA";
-import Services from "@/app/components/Services1";
-import Use from "@/app/components/Use";
-import TextinHero from "@/app/components/TextinHero";
+import ToolPage from "@/app/components/bay/ToolPage";
 
 export default function Page() {
-  const [url, setUrl] = useState("");
-  const [assets, setAssets] = useState(null);
-  const [error, setError] = useState("");
-
-  const handleFetchAssets = async () => {
-    try {
-      const response = await axios.post(
-        "/api/get-assets",
-        { url, content: "channelInfo" }
-      );
-      setAssets(response.data);
-      setError("");
-    } catch (err) {
-      console.error("Error fetching assets:", err);
-
-      // Enhanced error handling
-      if (err.response) {
-        // Handle server errors with status code
-        setError(
-          err.response.data.error ||
-            `Server error (status: ${err.response.status}). Please try again.`
-        );
-      } else if (err.request) {
-        // Handle network errors or no response from server
-        setError(
-          "No response from the server. Please check your internet connection and try again."
-        );
-      } else {
-        // Handle unexpected errors
-        setError(
-          "An unexpected error occurred. Please ensure the URL is correct and try again."
-        );
-      }
-    }
-  };
-
-  const handleDownloadJSON = async () => {
-    try {
-      const response = await axios.post(
-        "/api/download-assets",
-        { url, type: "json", content: "channelInfo" }, // Correct content type and type parameter
-        {
-          responseType: "blob", // Important for downloading files
-        }
-      );
-
-      const blob = new Blob([response.data], { type: "application/json" }); // Correct MIME type for JSON
-      const downloadUrl = window.URL.createObjectURL(blob);
-      const link = document.createElement("a");
-      link.href = downloadUrl;
-      link.download = "channelInfo.json"; // Name of the JSON file
-      document.body.appendChild(link);
-      link.click();
-      link.remove();
-    } catch (err) {
-      setError("Error downloading JSON. Please try again.");
-    }
-  };
   const FeaturesHeader = [
     {
       title: (
-        <h2 className="text-3xl font-bold sm:text-4xl">
-          Main <span className="text-red-600">Features</span>
+        <h2>
+          Main Features
         </h2>
       ),
       desc: (
-        <p className="mt-4 text-gray-600">
+        <p>
           Get everything you need to know about any YouTube channel. Check out
           the main features that make our tool smarter than others.
         </p>
@@ -98,7 +33,7 @@ export default function Page() {
             href="https://support.google.com/youtube/answer/11914225?hl=en&co=YOUTUBE._YTVideoType%3Dvideo&sjid=3568816026513773970-AP"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline text-red-600 hover:text-red-800"
+           
           >
             YouTube SEO
           </a>
@@ -128,7 +63,7 @@ export default function Page() {
             href="https://youtubedownload.org/"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline text-red-600 hover:text-red-800"
+           
           >
             YouTube downloader
           </a>
@@ -175,13 +110,13 @@ export default function Page() {
   const serviceHeader = [
     {
       header: (
-        <h2 className="mt-0 mb-8 text-2xl font-bold text-gray-700 text-left md:text-4xl md:mb-6">
-          About Our <span className="text-red-600">You</span>Tube Information
+        <h2>
+          About Our YouTube Information
           Downloader?
         </h2>
       ),
       desc: (
-        <p className="text-gray-600 text-sm md:text-base md:pl-5">
+        <p>
           A YouTube Channel Information downloader is a specialized tool that
           gathers and extracts detailed information about a YouTube channel from
           a URL. It is mainly used by content creators to understand their
@@ -193,12 +128,12 @@ export default function Page() {
   const serviceHeader2 = [
     {
       title: (
-        <h2 className="text-3xl font-bold sm:text-4xl">
+        <h2>
           Best Practices for Using Channel Information Data
         </h2>
       ),
       desc: (
-        <p className="mt-4 text-gray-600">
+        <p>
           You might be thinking about how would random channel data help your
           content creation process. Well, heres how successful YouTubers use
           such data effectively:
@@ -225,7 +160,7 @@ export default function Page() {
             href="https://support.google.com/youtube/answer/72851?hl=en&co=GENIE.Platform%3DDesktop&sjid=3568816026513773970-AP"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline text-red-600 hover:text-red-800"
+           
           >
             monetization
           </a>
@@ -245,13 +180,13 @@ export default function Page() {
   const UseHeader = [
     {
       title: (
-        <h2 className="my-8 text-2xl font-bold text-blace md:text-4xl">
-          How To Use The <span className="text-red-600">You</span>Tube Channel
+        <h2>
+          How To Use The YouTube Channel
           Information Downloader?
         </h2>
       ),
       desc: (
-        <p className="text-black">
+        <p>
           Check out the steps to follow to extract a channel’s information from
           our tool:
         </p>
@@ -276,12 +211,12 @@ export default function Page() {
   const HeroText = [
     {
       title: (
-        <h2 className="text-2xl font-semibold text-red-600">
+        <h2>
           CHANNEL INFORMATION
         </h2>
       ),
       desc: (
-        <p className="mt-4 text-gray-800">
+        <p>
           Ever noticed that shiny golden play button on YouTubers profiles?
           Well, its no coincidence. It took them years of competitor and niche
           research to get there. But what if you can do the same within a couple
@@ -292,78 +227,19 @@ export default function Page() {
     },
   ];
   return (
-    <div className="flex flex-col items-center min-h-screen bg-white">
-      <section className="bg-white rounded-2xl shadow-2xl w-full max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-3xl xl:max-w-4xl mx-auto mt-44 mb-44">
-        <div className="px-6 py-10 sm:py-12 md:py-16 text-center">
-          <div className="max-w-lg mx-auto">
-            <h1 className="text-3xl font-semibold text-gray-800 lg:text-4xl">
-              <span className="text-red-600">You</span>Tube Asset Downloader
-            </h1>
-
-            <p className="mt-6 text-gray-500">
-              Enter the URL of a YouTube video to download
-              <span className="text-black font-bold">
-                {" "}
-                Channel Information{" "}
-              </span>
-            </p>
-
-            <div className="w-full max-w-sm mx-auto mt-6 bg-transparent border rounded-full focus-within:border-blue-400 focus-within:ring focus-within:ring-blue-300 focus-within:ring-opacity-40">
-              <form className="flex flex-col md:flex-row items-center">
-                <input
-                  type="text"
-                  value={url}
-                  onChange={(e) => setUrl(e.target.value)}
-                  placeholder="Enter YouTube video URL"
-                  className="flex-1 h-10 px-4 py-2 m-1 text-gray-700 placeholder-gray-400 bg-transparent border-none appearance-none focus:outline-none focus:placeholder-transparent focus:ring-0"
-                />
-                <button
-                  type="button"
-                  onClick={handleFetchAssets}
-                  className="h-10 px-4 py-2 m-1 text-white transition-colors duration-300 transform bg-red-600 rounded-full hover:bg-red-400 focus:outline-none focus:bg-red-400 whitespace-nowrap"
-                >
-                  Channel Info
-                </button>
-              </form>
-            </div>
-            {error && <p className="mt-4 text-red-500">{error}</p>}
-            <TextinHero data={HeroText} />
-
-            {assets && (
-              <div className="mt-8 text-left">
-                <h2 className="text-2xl font-semibold text-gray-800 mt-6">
-                  Channel Information
-                </h2>
-                <pre className="mt-2 bg-gray-100 p-4 rounded-lg text-sm text-gray-700 overflow-x-auto">
-                  {JSON.stringify(assets.channelInfo, null, 2)}
-                </pre>
-                <button
-                  onClick={handleDownloadJSON}
-                  className="mt-4 px-4 py-2 bg-green-500 text-white rounded-full hover:bg-green-400 focus:outline-none"
-                >
-                  Download as Json
-                </button>
-              </div>
-            )}
-          </div>
-        </div>
-      </section>
-      <div className="container mx-auto px-4 mt-10">
-        {/* Services Section */}
-        <Services
-          header={serviceHeader}
-          data={serviceData}
-          header2={serviceHeader2}
-        />
-        {/* Features Section */}
-        <Features1 header={FeaturesHeader} data={Featuress} />
-        {/* How to Use Section */}
-        <Use header={UseHeader} data={UseData} />
-        {/* CTA Section */}
-        <CTA data={CtaData} />
-        {/* FAQs Section */}
-        <FAQ1 data={FAQ} />
-      </div>
-    </div>
+    <ToolPage
+      toolId="channelinformation"
+      title="YouTube Asset Downloader"
+      intro={HeroText}
+      about={serviceHeader}
+      why={serviceHeader2}
+      whyItems={serviceData}
+      featuresHeader={FeaturesHeader}
+      features={Featuress}
+      useHeader={UseHeader}
+      steps={UseData}
+      cta={CtaData}
+      faq={FAQ}
+    />
   );
 }

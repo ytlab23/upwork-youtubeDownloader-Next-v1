@@ -18,8 +18,8 @@ export default function Page() {
   const handleFetchAssets = async () => {
     try {
       const response = await axios.post(
-        "https://upwork-youtubee-downolader-nodejs-v1.vercel.app/api/get-assets",
-        { url }
+        "/api/get-assets",
+        { url, content: "transcript" }
       );
       setAssets(response.data);
       setError("");
@@ -45,7 +45,7 @@ export default function Page() {
   const handleDownloadPDF = async () => {
     try {
       const response = await axios.post(
-        "https://upwork-youtubee-downolader-nodejs-v1.vercel.app/api/download-assets",
+        "/api/download-assets",
         {
           url,
           type: "pdf",

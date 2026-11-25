@@ -17,8 +17,8 @@ export default function Page() {
   const handleFetchAssets = async () => {
     try {
       const response = await axios.post(
-        "https://upwork-youtube-downloader-nodejs-v1.vercel.app/api/get-assets",
-        { url }
+        "/api/get-assets",
+        { url, content: "channelInfo" }
       );
       setAssets(response.data);
       setError("");
@@ -49,7 +49,7 @@ export default function Page() {
   const handleDownloadJSON = async () => {
     try {
       const response = await axios.post(
-        "https://upwork-youtube-downloader-nodejs-v1.vercel.app/api/download-assets",
+        "/api/download-assets",
         { url, type: "json", content: "channelInfo" }, // Correct content type and type parameter
         {
           responseType: "blob", // Important for downloading files

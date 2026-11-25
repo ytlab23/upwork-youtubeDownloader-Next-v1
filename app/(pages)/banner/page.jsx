@@ -17,8 +17,8 @@ export default function Page() {
   const handleFetchAssets = async () => {
     try {
       const response = await axios.post(
-        "https://upwork-youtube-downloader-nodejs-v1.vercel.app/api/get-assets",
-        { url }
+        "/api/get-assets",
+        { url, content: "banner" }
       );
       setAssets(response.data);
       setError("");

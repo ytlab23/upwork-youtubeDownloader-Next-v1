@@ -1,0 +1,72 @@
+# BEGIN YoutubeDownload static site
+# Apache rules for the exported site (cPanel hosting). The deploy merges this
+# block into the server's .htaccess and keeps cPanel's own blocks, so edit it
+# here, not on the server. Page addresses stay as they were on Vercel: /thumbnail.
+
+DirectoryIndex index.html
+Options -Indexes -MultiViews
+ErrorDocument 404 /404.html
+AddDefaultCharset UTF-8
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Certificate checks (AutoSSL / Let's Encrypt) must reach their files untouched.
+  RewriteRule ^\.well-known/ - [L]
+
+  # One address for the site: https://youtubedownload.org (no www, no hosting alias).
+  RewriteCond %{HTTP_HOST} !^youtubedownload\.org$ [NC]
+  RewriteRule ^ https://youtubedownload.org%{REQUEST_URI} [R=301,L]
+
+  # HTTPS only. X-Forwarded-Proto keeps this loop-free behind Cloudflare.
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+  RewriteRule ^ https://youtubedownload.org%{REQUEST_URI} [R=301,L]
+
+  # The tools' back-end (PHP in api/). Its helper code is never served directly.
+  RewriteRule ^api/_lib(/|$) - [F,L]
+  RewriteRule ^api/(get-assets|download-assets)/?$ api/$1.php [L]
+
+  # One URL per page: /index.html -> /, /thumbnail.html -> /thumbnail, /thumbnail/ -> /thumbnail
+  RewriteCond %{THE_REQUEST} \s/+((?:[^\s?]*/)?)index\.html[\s?]
+  RewriteRule ^ https://youtubedownload.org/%1 [R=301,L]
+  RewriteCond %{THE_REQUEST} \s/+([^\s?]+?)\.html[\s?]
+  RewriteRule ^ https://youtubedownload.org/%1 [R=301,L]
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+  RewriteRule ^(.+)/$ https://youtubedownload.org/$1 [R=301,L]
+
+  # /thumbnail is served from thumbnail.html
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^(.+)$ $1.html [L]
+</IfModule>
+
+<IfModule mod_headers.c>
+  # Pages and their data files: browsers check for a newer version each time.
+  <FilesMatch "\.(html|txt|xml)$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+
+  # Images and icons that keep their file name from one deploy to the next.
+  <FilesMatch "\.(png|jpe?g|gif|webp|avif|svg|ico)$">
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+
+  # Next.js puts a hash of the content in every file name under /_next/static/.
+  <If "%{REQUEST_URI} =~ m#^/_next/static/#">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </If>
+
+  Header always set Strict-Transport-Security "max-age=31536000"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+<IfModule mod_deflate.c>
+  <IfModule mod_filter.c>
+    AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/xml application/javascript text/javascript application/json image/svg+xml
+  </IfModule>
+</IfModule>
+# END YoutubeDownload static site

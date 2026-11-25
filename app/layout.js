@@ -16,16 +16,19 @@ const mono = JetBrains_Mono({
   display: "swap",
 });
 
+const ICON_VERSION = 2;
+
 export const metadata = {
   title: "YoutubeDownloader",
   description: " Unlock YouTube Content Effortlessly",
   // The site mark (public/icon.svg); favicon.ico and apple-touch-icon.png are rendered from it.
+  // The ?v= suffix makes caches (Cloudflare, browsers) fetch the new files; bump it when the mark changes.
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "48x48" },
-      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: `/favicon.ico?v=${ICON_VERSION}`, sizes: "48x48" },
+      { url: `/icon.svg?v=${ICON_VERSION}`, type: "image/svg+xml" },
     ],
-    apple: "/apple-touch-icon.png",
+    apple: `/apple-touch-icon.png?v=${ICON_VERSION}`,
   },
 };
 
